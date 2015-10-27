@@ -9,8 +9,8 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>b5c7bb61-a5ff-43b2-a05e-33440f216f47</PackageIdentityName>
-    <IntermediateOutputPath>D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>9460F2EC9B67E7CE4D6C6B431076F67AC68BA9E025E4EB43180EA353B66CB7E3</RegisteredManifestChecksum>
+    <IntermediateOutputPath>D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>3B347C7B4AD45610207A097A80A2ACC3F0A3F3E7B0DADBB8F1015E1EF8B3A2A6</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>b5c7bb61-a5ff-43b2-a05e-33440f216f47_1.0.0.0_x86__qemh25yxwsnxj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>b5c7bb61-a5ff-43b2-a05e-33440f216f47_qemh25yxwsnxj!App</RegisteredUserModeAppID>
     <RegisteredPackageID>b5c7bb61-a5ff-43b2-a05e-33440f216f47</RegisteredPackageID>
@@ -19,490 +19,518 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-10-05T03:07:32.469</Modified>
+      <Modified>2015-10-27T17:04:19.114</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\ApplicationInsights.config">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
       <Modified>2015-09-29T15:41:40.051</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-06-04T15:32:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
-      <Modified>2015-06-04T15:32:06.000</Modified>
+      <Modified>2015-10-27T15:37:31.002</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
-      <Modified>2015-06-04T15:32:06.000</Modified>
+      <Modified>2015-10-27T15:24:15.203</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <Modified>2015-06-04T15:32:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <Modified>2015-06-04T15:32:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <Modified>2015-06-04T15:32:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <Modified>2015-06-04T15:32:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\ClrCompression.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\ClrCompression.dll">
       <PackagePath>ClrCompression.dll</PackagePath>
       <Modified>2015-08-08T06:39:00.061</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\entrypoint\QuanLyThuChi.exe">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\entrypoint\QuanLyThuChi.exe">
       <PackagePath>entrypoint\QuanLyThuChi.exe</PackagePath>
-      <Modified>2015-10-05T03:07:31.415</Modified>
+      <Modified>2015-10-27T17:04:18.587</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Microsoft.ApplicationInsights.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Images\Background_1366_768.jpg">
+      <PackagePath>Images\Background_1366_768.jpg</PackagePath>
+      <Modified>2015-08-27T02:51:15.690</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Images\Background_1920_1080.jpg">
+      <PackagePath>Images\Background_1920_1080.jpg</PackagePath>
+      <Modified>2015-10-27T16:10:52.196</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Images\QLTC_LOGO_600_600.png">
+      <PackagePath>Images\QLTC_LOGO_600_600.png</PackagePath>
+      <Modified>2015-10-27T15:49:18.718</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
       <Modified>2015-08-08T06:38:15.332</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Microsoft.ApplicationInsights.Extensibility.Windows.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Microsoft.ApplicationInsights.Extensibility.Windows.dll">
       <PackagePath>Microsoft.ApplicationInsights.Extensibility.Windows.dll</PackagePath>
       <Modified>2015-08-08T06:38:15.871</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Microsoft.ApplicationInsights.PersistenceChannel.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Microsoft.ApplicationInsights.PersistenceChannel.dll">
       <PackagePath>Microsoft.ApplicationInsights.PersistenceChannel.dll</PackagePath>
       <Modified>2015-08-08T06:38:15.737</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Microsoft.CSharp.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
       <Modified>2015-08-08T06:38:30.705</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Microsoft.VisualBasic.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Microsoft.VisualBasic.dll">
       <PackagePath>Microsoft.VisualBasic.dll</PackagePath>
       <Modified>2015-08-08T06:38:30.699</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Microsoft.Win32.Primitives.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Microsoft.Win32.Primitives.dll">
       <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
       <Modified>2015-08-08T06:38:20.403</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2015-09-29T15:40:37.102</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\QuanLyThuChi.exe">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\QuanLyThuChi.exe">
       <PackagePath>QuanLyThuChi.exe</PackagePath>
-      <Modified>2015-10-05T03:07:32.467</Modified>
+      <Modified>2015-10-27T17:04:19.113</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\QuanLyThuChi.xr.xml">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\QuanLyThuChi.xr.xml">
       <PackagePath>QuanLyThuChi.xr.xml</PackagePath>
-      <Modified>2015-10-05T03:00:44.823</Modified>
+      <Modified>2015-10-27T17:02:55.389</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\resources.pri">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-10-05T03:07:31.987</Modified>
+      <Modified>2015-10-27T17:03:00.583</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.AppContext.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\SQLite.Net.Async.dll">
+      <PackagePath>SQLite.Net.Async.dll</PackagePath>
+      <Modified>2015-10-14T02:55:58.589</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\SQLite.Net.dll">
+      <PackagePath>SQLite.Net.dll</PackagePath>
+      <Modified>2015-10-14T02:55:58.829</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\SQLite.Net.Platform.WinRT.dll">
+      <PackagePath>SQLite.Net.Platform.WinRT.dll</PackagePath>
+      <Modified>2015-10-14T02:55:58.843</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\sqlite3.dll">
+      <PackagePath>sqlite3.dll</PackagePath>
+      <Modified>2015-10-21T14:06:28.450</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
       <Modified>2015-08-08T06:38:30.767</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Collections.Concurrent.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Collections.Concurrent.dll">
       <PackagePath>System.Collections.Concurrent.dll</PackagePath>
       <Modified>2015-08-08T06:38:31.682</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Collections.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Collections.dll">
       <PackagePath>System.Collections.dll</PackagePath>
       <Modified>2015-08-08T06:38:30.987</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Collections.Immutable.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Collections.Immutable.dll">
       <PackagePath>System.Collections.Immutable.dll</PackagePath>
       <Modified>2015-08-08T06:38:31.203</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Collections.NonGeneric.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Collections.NonGeneric.dll">
       <PackagePath>System.Collections.NonGeneric.dll</PackagePath>
       <Modified>2015-08-08T06:38:25.727</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Collections.Specialized.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Collections.Specialized.dll">
       <PackagePath>System.Collections.Specialized.dll</PackagePath>
       <Modified>2015-08-08T06:38:22.538</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.ComponentModel.Annotations.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.ComponentModel.Annotations.dll">
       <PackagePath>System.ComponentModel.Annotations.dll</PackagePath>
       <Modified>2015-08-08T06:38:31.520</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.ComponentModel.DataAnnotations.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.ComponentModel.DataAnnotations.dll">
       <PackagePath>System.ComponentModel.DataAnnotations.dll</PackagePath>
       <Modified>2015-08-08T06:38:24.868</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.ComponentModel.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.ComponentModel.dll">
       <PackagePath>System.ComponentModel.dll</PackagePath>
       <Modified>2015-08-08T06:38:32.344</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.ComponentModel.EventBasedAsync.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.ComponentModel.EventBasedAsync.dll">
       <PackagePath>System.ComponentModel.EventBasedAsync.dll</PackagePath>
       <Modified>2015-08-08T06:38:20.531</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Core.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Core.dll">
       <PackagePath>System.Core.dll</PackagePath>
       <Modified>2015-08-08T06:38:24.922</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Data.Common.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Data.Common.dll">
       <PackagePath>System.Data.Common.dll</PackagePath>
       <Modified>2015-08-08T06:38:21.745</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Diagnostics.Contracts.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Diagnostics.Contracts.dll">
       <PackagePath>System.Diagnostics.Contracts.dll</PackagePath>
       <Modified>2015-08-08T06:38:20.512</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Diagnostics.Debug.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Diagnostics.Debug.dll">
       <PackagePath>System.Diagnostics.Debug.dll</PackagePath>
       <Modified>2015-08-08T06:38:31.770</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Diagnostics.StackTrace.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Diagnostics.StackTrace.dll">
       <PackagePath>System.Diagnostics.StackTrace.dll</PackagePath>
       <Modified>2015-08-08T06:38:21.282</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Diagnostics.Tools.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Diagnostics.Tools.dll">
       <PackagePath>System.Diagnostics.Tools.dll</PackagePath>
       <Modified>2015-08-08T06:38:33.698</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Diagnostics.Tracing.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Diagnostics.Tracing.dll">
       <PackagePath>System.Diagnostics.Tracing.dll</PackagePath>
       <Modified>2015-08-08T06:38:33.511</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.dll">
       <PackagePath>System.dll</PackagePath>
       <Modified>2015-08-08T06:38:25.088</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Dynamic.Runtime.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Dynamic.Runtime.dll">
       <PackagePath>System.Dynamic.Runtime.dll</PackagePath>
       <Modified>2015-08-08T06:38:33.513</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Globalization.Calendars.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Globalization.Calendars.dll">
       <PackagePath>System.Globalization.Calendars.dll</PackagePath>
       <Modified>2015-08-08T06:38:33.512</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Globalization.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Globalization.dll">
       <PackagePath>System.Globalization.dll</PackagePath>
       <Modified>2015-08-08T06:38:33.509</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Globalization.Extensions.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Globalization.Extensions.dll">
       <PackagePath>System.Globalization.Extensions.dll</PackagePath>
       <Modified>2015-08-08T06:38:36.878</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.IO.Compression.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.IO.Compression.dll">
       <PackagePath>System.IO.Compression.dll</PackagePath>
       <Modified>2015-08-08T06:38:39.952</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.IO.Compression.ZipFile.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.IO.Compression.ZipFile.dll">
       <PackagePath>System.IO.Compression.ZipFile.dll</PackagePath>
       <Modified>2015-08-08T06:38:39.333</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.IO.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.IO.dll">
       <PackagePath>System.IO.dll</PackagePath>
       <Modified>2015-08-08T06:38:39.377</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.IO.FileSystem.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.IO.FileSystem.dll">
       <PackagePath>System.IO.FileSystem.dll</PackagePath>
       <Modified>2015-08-08T06:38:40.084</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.IO.FileSystem.Primitives.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.IO.FileSystem.Primitives.dll">
       <PackagePath>System.IO.FileSystem.Primitives.dll</PackagePath>
       <Modified>2015-08-08T06:38:39.953</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.IO.IsolatedStorage.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.IO.IsolatedStorage.dll">
       <PackagePath>System.IO.IsolatedStorage.dll</PackagePath>
       <Modified>2015-08-08T06:38:21.731</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.IO.UnmanagedMemoryStream.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.IO.UnmanagedMemoryStream.dll">
       <PackagePath>System.IO.UnmanagedMemoryStream.dll</PackagePath>
       <Modified>2015-08-08T06:38:40.788</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Linq.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Linq.dll">
       <PackagePath>System.Linq.dll</PackagePath>
       <Modified>2015-08-08T06:38:41.219</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Linq.Expressions.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Linq.Expressions.dll">
       <PackagePath>System.Linq.Expressions.dll</PackagePath>
       <Modified>2015-08-08T06:38:41.169</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Linq.Parallel.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Linq.Parallel.dll">
       <PackagePath>System.Linq.Parallel.dll</PackagePath>
       <Modified>2015-08-08T06:38:41.255</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Linq.Queryable.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Linq.Queryable.dll">
       <PackagePath>System.Linq.Queryable.dll</PackagePath>
       <Modified>2015-08-08T06:38:41.377</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Net.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Net.dll">
       <PackagePath>System.Net.dll</PackagePath>
       <Modified>2015-08-08T06:38:25.149</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Net.Http.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Net.Http.dll">
       <PackagePath>System.Net.Http.dll</PackagePath>
       <Modified>2015-08-08T06:38:42.134</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Net.Http.Rtc.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Net.Http.Rtc.dll">
       <PackagePath>System.Net.Http.Rtc.dll</PackagePath>
       <Modified>2015-08-08T06:38:21.311</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Net.NetworkInformation.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Net.NetworkInformation.dll">
       <PackagePath>System.Net.NetworkInformation.dll</PackagePath>
       <Modified>2015-08-08T06:38:41.313</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Net.Primitives.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Net.Primitives.dll">
       <PackagePath>System.Net.Primitives.dll</PackagePath>
       <Modified>2015-08-08T06:38:41.520</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Net.Requests.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Net.Requests.dll">
       <PackagePath>System.Net.Requests.dll</PackagePath>
       <Modified>2015-08-08T06:38:22.144</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Net.Sockets.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Net.Sockets.dll">
       <PackagePath>System.Net.Sockets.dll</PackagePath>
       <Modified>2015-08-08T06:38:22.918</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Net.WebHeaderCollection.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Net.WebHeaderCollection.dll">
       <PackagePath>System.Net.WebHeaderCollection.dll</PackagePath>
       <Modified>2015-08-08T06:38:22.890</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Numerics.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Numerics.dll">
       <PackagePath>System.Numerics.dll</PackagePath>
       <Modified>2015-08-08T06:38:25.241</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Numerics.Vectors.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Numerics.Vectors.dll">
       <PackagePath>System.Numerics.Vectors.dll</PackagePath>
       <Modified>2015-08-08T06:38:41.370</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Numerics.Vectors.WindowsRuntime.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Numerics.Vectors.WindowsRuntime.dll">
       <PackagePath>System.Numerics.Vectors.WindowsRuntime.dll</PackagePath>
       <Modified>2015-08-08T06:38:21.858</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.ObjectModel.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.ObjectModel.dll">
       <PackagePath>System.ObjectModel.dll</PackagePath>
       <Modified>2015-08-08T06:38:42.579</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Private.DataContractSerialization.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Private.DataContractSerialization.dll">
       <PackagePath>System.Private.DataContractSerialization.dll</PackagePath>
       <Modified>2015-08-08T06:38:24.789</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Private.Networking.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Private.Networking.dll">
       <PackagePath>System.Private.Networking.dll</PackagePath>
       <Modified>2015-08-08T06:38:24.605</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Private.ServiceModel.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Private.ServiceModel.dll">
       <PackagePath>System.Private.ServiceModel.dll</PackagePath>
       <Modified>2015-08-08T06:38:26.352</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Private.Uri.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Private.Uri.dll">
       <PackagePath>System.Private.Uri.dll</PackagePath>
       <Modified>2015-08-08T06:38:21.013</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Reflection.Context.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Reflection.Context.dll">
       <PackagePath>System.Reflection.Context.dll</PackagePath>
       <Modified>2015-08-08T06:38:22.264</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Reflection.DispatchProxy.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Reflection.DispatchProxy.dll">
       <PackagePath>System.Reflection.DispatchProxy.dll</PackagePath>
       <Modified>2015-08-08T06:38:43.759</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Reflection.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Reflection.dll">
       <PackagePath>System.Reflection.dll</PackagePath>
       <Modified>2015-08-08T06:38:42.609</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Reflection.Emit.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Reflection.Emit.dll">
       <PackagePath>System.Reflection.Emit.dll</PackagePath>
       <Modified>2015-08-08T06:38:59.313</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Reflection.Emit.ILGeneration.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Reflection.Emit.ILGeneration.dll">
       <PackagePath>System.Reflection.Emit.ILGeneration.dll</PackagePath>
       <Modified>2015-08-08T06:38:59.251</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Reflection.Emit.Lightweight.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Reflection.Emit.Lightweight.dll">
       <PackagePath>System.Reflection.Emit.Lightweight.dll</PackagePath>
       <Modified>2015-08-08T06:38:59.040</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Reflection.Extensions.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Reflection.Extensions.dll">
       <PackagePath>System.Reflection.Extensions.dll</PackagePath>
       <Modified>2015-08-08T06:38:44.166</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Reflection.Metadata.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Reflection.Metadata.dll">
       <PackagePath>System.Reflection.Metadata.dll</PackagePath>
       <Modified>2015-08-08T06:38:43.740</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Reflection.Primitives.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Reflection.Primitives.dll">
       <PackagePath>System.Reflection.Primitives.dll</PackagePath>
       <Modified>2015-08-08T06:38:44.190</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Reflection.TypeExtensions.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Reflection.TypeExtensions.dll">
       <PackagePath>System.Reflection.TypeExtensions.dll</PackagePath>
       <Modified>2015-08-08T06:38:43.759</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Resources.ResourceManager.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Resources.ResourceManager.dll">
       <PackagePath>System.Resources.ResourceManager.dll</PackagePath>
       <Modified>2015-08-08T06:38:43.753</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Runtime.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2015-08-08T06:38:45.666</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Runtime.Extensions.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Runtime.Extensions.dll">
       <PackagePath>System.Runtime.Extensions.dll</PackagePath>
       <Modified>2015-08-08T06:38:44.760</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Runtime.Handles.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Runtime.Handles.dll">
       <PackagePath>System.Runtime.Handles.dll</PackagePath>
       <Modified>2015-08-08T06:38:45.663</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Runtime.InteropServices.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Runtime.InteropServices.dll">
       <PackagePath>System.Runtime.InteropServices.dll</PackagePath>
       <Modified>2015-08-08T06:38:46.490</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Runtime.InteropServices.WindowsRuntime.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Runtime.InteropServices.WindowsRuntime.dll">
       <PackagePath>System.Runtime.InteropServices.WindowsRuntime.dll</PackagePath>
       <Modified>2015-08-08T06:38:22.892</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Runtime.Numerics.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Runtime.Numerics.dll">
       <PackagePath>System.Runtime.Numerics.dll</PackagePath>
       <Modified>2015-08-08T06:38:47.966</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Runtime.Serialization.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Runtime.Serialization.dll">
       <PackagePath>System.Runtime.Serialization.dll</PackagePath>
       <Modified>2015-08-08T06:38:25.263</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Runtime.Serialization.Json.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Runtime.Serialization.Json.dll">
       <PackagePath>System.Runtime.Serialization.Json.dll</PackagePath>
       <Modified>2015-08-08T06:38:22.516</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Runtime.Serialization.Primitives.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Runtime.Serialization.Primitives.dll">
       <PackagePath>System.Runtime.Serialization.Primitives.dll</PackagePath>
       <Modified>2015-08-08T06:38:22.541</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Runtime.Serialization.Xml.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Runtime.Serialization.Xml.dll">
       <PackagePath>System.Runtime.Serialization.Xml.dll</PackagePath>
       <Modified>2015-08-08T06:38:25.923</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Runtime.WindowsRuntime.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Runtime.WindowsRuntime.dll">
       <PackagePath>System.Runtime.WindowsRuntime.dll</PackagePath>
       <Modified>2015-08-08T06:38:25.726</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Runtime.WindowsRuntime.UI.Xaml.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Runtime.WindowsRuntime.UI.Xaml.dll">
       <PackagePath>System.Runtime.WindowsRuntime.UI.Xaml.dll</PackagePath>
       <Modified>2015-08-08T06:38:25.507</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Security.Claims.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Security.Claims.dll">
       <PackagePath>System.Security.Claims.dll</PackagePath>
       <Modified>2015-08-08T06:38:46.471</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Security.Principal.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Security.Principal.dll">
       <PackagePath>System.Security.Principal.dll</PackagePath>
       <Modified>2015-08-08T06:38:47.975</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.ServiceModel.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.ServiceModel.dll">
       <PackagePath>System.ServiceModel.dll</PackagePath>
       <Modified>2015-08-08T06:38:25.280</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.ServiceModel.Duplex.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.ServiceModel.Duplex.dll">
       <PackagePath>System.ServiceModel.Duplex.dll</PackagePath>
       <Modified>2015-08-08T06:38:25.860</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.ServiceModel.Http.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.ServiceModel.Http.dll">
       <PackagePath>System.ServiceModel.Http.dll</PackagePath>
       <Modified>2015-08-08T06:38:25.628</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.ServiceModel.NetTcp.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.ServiceModel.NetTcp.dll">
       <PackagePath>System.ServiceModel.NetTcp.dll</PackagePath>
       <Modified>2015-08-08T06:38:25.731</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.ServiceModel.Primitives.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.ServiceModel.Primitives.dll">
       <PackagePath>System.ServiceModel.Primitives.dll</PackagePath>
       <Modified>2015-08-08T06:38:26.103</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.ServiceModel.Security.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.ServiceModel.Security.dll">
       <PackagePath>System.ServiceModel.Security.dll</PackagePath>
       <Modified>2015-08-08T06:38:25.716</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.ServiceModel.Web.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.ServiceModel.Web.dll">
       <PackagePath>System.ServiceModel.Web.dll</PackagePath>
       <Modified>2015-08-08T06:38:25.347</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Text.Encoding.CodePages.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Text.Encoding.CodePages.dll">
       <PackagePath>System.Text.Encoding.CodePages.dll</PackagePath>
       <Modified>2015-08-08T06:38:26.007</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Text.Encoding.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Text.Encoding.dll">
       <PackagePath>System.Text.Encoding.dll</PackagePath>
       <Modified>2015-08-08T06:38:47.975</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Text.Encoding.Extensions.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Text.Encoding.Extensions.dll">
       <PackagePath>System.Text.Encoding.Extensions.dll</PackagePath>
       <Modified>2015-08-08T06:38:47.531</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Text.RegularExpressions.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Text.RegularExpressions.dll">
       <PackagePath>System.Text.RegularExpressions.dll</PackagePath>
       <Modified>2015-08-08T06:38:48.420</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Threading.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Threading.dll">
       <PackagePath>System.Threading.dll</PackagePath>
       <Modified>2015-08-08T06:38:48.636</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Threading.Overlapped.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Threading.Overlapped.dll">
       <PackagePath>System.Threading.Overlapped.dll</PackagePath>
       <Modified>2015-08-08T06:38:20.528</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Threading.Tasks.Dataflow.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Threading.Tasks.Dataflow.dll">
       <PackagePath>System.Threading.Tasks.Dataflow.dll</PackagePath>
       <Modified>2015-08-08T06:38:49.848</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Threading.Tasks.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Threading.Tasks.dll">
       <PackagePath>System.Threading.Tasks.dll</PackagePath>
       <Modified>2015-08-08T06:38:49.269</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Threading.Tasks.Parallel.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Threading.Tasks.Parallel.dll">
       <PackagePath>System.Threading.Tasks.Parallel.dll</PackagePath>
       <Modified>2015-08-08T06:38:49.851</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Threading.Timer.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Threading.Timer.dll">
       <PackagePath>System.Threading.Timer.dll</PackagePath>
       <Modified>2015-08-08T06:38:49.850</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Windows.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Windows.dll">
       <PackagePath>System.Windows.dll</PackagePath>
       <Modified>2015-08-08T06:38:25.378</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Xml.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Xml.dll">
       <PackagePath>System.Xml.dll</PackagePath>
       <Modified>2015-08-08T06:38:25.448</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Xml.Linq.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Xml.Linq.dll">
       <PackagePath>System.Xml.Linq.dll</PackagePath>
       <Modified>2015-08-08T06:38:25.505</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Xml.ReaderWriter.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Xml.ReaderWriter.dll">
       <PackagePath>System.Xml.ReaderWriter.dll</PackagePath>
       <Modified>2015-08-08T06:38:50.647</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Xml.Serialization.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Xml.Serialization.dll">
       <PackagePath>System.Xml.Serialization.dll</PackagePath>
       <Modified>2015-08-08T06:38:25.562</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Xml.XDocument.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Xml.XDocument.dll">
       <PackagePath>System.Xml.XDocument.dll</PackagePath>
       <Modified>2015-08-08T06:38:50.666</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Xml.XmlDocument.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Xml.XmlDocument.dll">
       <PackagePath>System.Xml.XmlDocument.dll</PackagePath>
       <Modified>2015-08-08T06:38:22.061</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Xml.XmlSerializer.dll">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-08-08T06:38:29.400</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Project\.Project\QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\WinMetadata\Windows.winmd">
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\WinMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2015-08-03T11:09:54.659</Modified>
     </AppxPackagedFile>
