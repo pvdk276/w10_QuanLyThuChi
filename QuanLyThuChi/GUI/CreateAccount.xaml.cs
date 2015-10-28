@@ -21,9 +21,9 @@ namespace QuanLyThuChi.GUI
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Login : Page
+    public sealed partial class CreateAccount : Page
     {
-        public Login()
+        public CreateAccount()
         {
             this.InitializeComponent();
         }
@@ -56,31 +56,14 @@ namespace QuanLyThuChi.GUI
             loginFrame.Navigate(typeof(Welcome));
         }
 
-        /// <summary>
-        /// Checks the login.
-        /// </summary>
-        private void checkLogin()
+        private void btnCreate_Click(object sender, RoutedEventArgs e)
         {
-            if (this.txtEmail.Text == "khoa.uit06@gmail.com" &&
-                this.txtPassword.Password == "12345")
-            {
-                var currentView = SystemNavigationManager.GetForCurrentView();
-                //hide back button on title
-                currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
-                Frame.Navigate(typeof(MainPage));
-            }
-        }
-        private void btnLogin_Click(object sender, RoutedEventArgs e)
-        {
-            this.checkLogin();
+
         }
 
-        private void txtPassword_KeyDown(object sender, KeyRoutedEventArgs e)
+        private void txtRePassword_KeyDown(object sender, KeyRoutedEventArgs e)
         {
-            if(e.Key == Windows.System.VirtualKey.Enter)
-            {
-                this.checkLogin();
-            }
+
         }
     }
 }

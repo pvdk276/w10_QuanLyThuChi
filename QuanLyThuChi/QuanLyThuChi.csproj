@@ -100,8 +100,14 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="DAL\ConnectToDB.cs" />
+    <Compile Include="GUI\CreateAccount.xaml.cs">
+      <DependentUpon>CreateAccount.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Welcome.xaml.cs">
+      <DependentUpon>Welcome.xaml</DependentUpon>
     </Compile>
     <Compile Include="GUI\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -135,7 +141,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="GUI\CreateAccount.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GUI\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\Welcome.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

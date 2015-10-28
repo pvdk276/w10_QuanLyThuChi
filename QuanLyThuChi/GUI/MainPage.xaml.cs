@@ -33,7 +33,7 @@ namespace QuanLyThuChi
         private void btnSync_Click(object sender, RoutedEventArgs e)
         {
             Frame homeFrame = Window.Current.Content as Frame;
-            homeFrame.Navigate(typeof(Login));
+            homeFrame.Navigate(typeof(Welcome));
         }
 
         private void OnNavigationFailed(object sender, NavigationFailedEventArgs e)

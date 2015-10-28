@@ -1,3 +1,5 @@
 App.xbf
+GUI\CreateAccount.xbf
 GUI\Login.xbf
 GUI\MainPage.xbf
+GUI\Welcome.xbf
