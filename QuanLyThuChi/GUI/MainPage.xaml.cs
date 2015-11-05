@@ -40,5 +40,18 @@ namespace QuanLyThuChi
         {
             throw new NotImplementedException();
         }
+
+        /// <summary>
+        /// Tạo ghi chép
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        private void btnGhiChep_Click(object sender, RoutedEventArgs e)
+        {
+            //if(!popGhiChep.IsOpen)
+            //{
+            //    popGhiChep.IsOpen = true;
+            //}
+        }
     }
 }

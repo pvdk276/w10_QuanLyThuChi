@@ -61,8 +61,8 @@ namespace QuanLyThuChi.GUI
         /// </summary>
         private void checkLogin()
         {
-            if (this.txtEmail.Text == "khoa.uit06@gmail.com" &&
-                this.txtPassword.Password == "12345")
+            if (this.txtEmail.Text == "admin" &&
+                this.txtPassword.Password == "admin")
             {
                 var currentView = SystemNavigationManager.GetForCurrentView();
                 //hide back button on title

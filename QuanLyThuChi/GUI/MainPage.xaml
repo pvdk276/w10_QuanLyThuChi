@@ -10,6 +10,7 @@
         <!--AdaptiveTrigger-->
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup>
+                <!--Phone state-->
                 <VisualState x:Name="Phone">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="0"/>
@@ -18,23 +19,32 @@
                         <Setter Target="MySplitView.CompactPaneLength" Value="0" ></Setter>
                     </VisualState.Setters>
                 </VisualState>
+                <!--Tablet state-->
                 <VisualState x:Name="Tablet">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="700"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="MySplitView.CompactPaneLength" Value="50" ></Setter>
+                        <Setter Target="MySplitView.CompactPaneLength" Value="48" ></Setter>
                         <Setter Target="HamburgerButton.Visibility" Value="Collapsed"></Setter>
+                        <Setter Target="abar.VerticalAlignment" Value="Top"></Setter>
+                        <Setter Target="txtTotal.VerticalAlignment" Value="Top"></Setter>
+                        <Setter Target="txtTotal.HorizontalAlignment" Value="Left"></Setter>
+                        <Setter Target="txtTotal.Margin" Value="10,10,0,0"></Setter>
                     </VisualState.Setters>
                 </VisualState>
+                <!--Desktop state-->
                 <VisualState x:Name="Desktop">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="1366"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="MySplitView.CompactPaneLength" Value="50" ></Setter>
-
+                        <Setter Target="MySplitView.CompactPaneLength" Value="48" ></Setter>
                         <Setter Target="HamburgerButton.Visibility" Value="Collapsed"></Setter>
+                        <Setter Target="abar.VerticalAlignment" Value="Top"></Setter>
+                        <Setter Target="txtTotal.VerticalAlignment" Value="Top"></Setter>
+                        <Setter Target="txtTotal.HorizontalAlignment" Value="Left"></Setter>
+                        <Setter Target="txtTotal.Margin" Value="10,10,0,0"></Setter>
                     </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>
@@ -43,42 +53,53 @@
         <SplitView x:Name="MySplitView" DisplayMode="CompactOverlay"  IsPaneOpen="False" 
                 CompactPaneLength="0" OpenPaneLength="230">
             <SplitView.Pane>
-                <StackPanel Background="{ThemeResource SystemControlForegroundAccentBrush}">
-                    <Button x:Name="HamburgerButton1" FontFamily="Segoe MDL2 Assets" Content="&#xE700;"
-                     Width="50" Height="50" Background="Transparent" Foreground="White" Click="HamburgerButton_Click" FontSize="26.667"/>
-                    <StackPanel Orientation="Horizontal" Tapped="StackPanel_Tapped">
+                <Grid Background="{ThemeResource SystemControlForegroundAccentBrush}">
+                    <Button x:Name="HamburgerButton1" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" VerticalAlignment="Top"
+                     Width="48" Height="50" Background="Transparent" Foreground="White" Click="HamburgerButton_Click" FontSize="26.667"/>
+                    <StackPanel Orientation="Horizontal" Tapped="StackPanel_Tapped" VerticalAlignment="Top" Margin="0,50,0,0">
                         <Button x:Name="btnVi" FontFamily="Segoe MDL2 Assets" Content="&#xE10F;"
-                     Width="50" Height="50" Background="Transparent" Foreground="White"/>
+                     Width="48" Height="50" Background="Transparent" Foreground="White"/>
                         <TextBlock Text="Tài khoản ví" FontSize="18" VerticalAlignment="Center" Foreground="White"/>
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="0,100,0,0">
                         <Button x:Name="btnStk" FontFamily="Segoe MDL2 Assets" Content="&#xE1D3;"
-                         Width="50" Height="50" Background="Transparent" Foreground="White"/>
+                         Width="48" Height="50" Background="Transparent" Foreground="White"/>
                         <TextBlock Text="Sổ tiết kiệm" FontSize="18" VerticalAlignment="Center" Foreground="White"/>
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal">
-                        <Button x:Name="btnThemTaiKhoan" FontFamily="Segoe MDL2 Assets" Content="&#xE292;"
-                         Width="50" Height="50" Background="Transparent" Foreground="White"/>
-                        <TextBlock Text="Thêm tài khoản mới" FontSize="18" VerticalAlignment="Center" Foreground="White"/>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
+                        <Button x:Name="btnThietLap" FontFamily="Segoe MDL2 Assets" Content="&#xE713;"
+                    		Width="48" Height="50" Background="Transparent" Foreground="White"/>
+                        <TextBlock Text="Thiết lập" FontSize="18" VerticalAlignment="Center" Foreground="White"/>
                     </StackPanel>
-                </StackPanel>
+                </Grid>
             </SplitView.Pane>
             <SplitView.Content>
-                <StackPanel>
-                    <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;"
-                     Width="50" Height="50" Background="Transparent" Foreground="Black" Click="HamburgerButton_Click" Padding="8,0,8,4" FontSize="26.667"/>
-                    <ListView x:Name="lstGhiChep" Height="493">
-
-                    </ListView>
-                    <Grid Width="359" Height="48">
-                        <TextBlock x:Name="txtTotal" Text="Tổng còn:" Margin="10,0" FontSize="20" FontWeight="Bold" FontStretch="UltraExpanded" Foreground="Red"/>
-                    </Grid>
-                    <CommandBar x:Name="abar" Margin="0" VerticalAlignment="Top">
+                <Grid>
+                    <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" HorizontalAlignment="Left" VerticalAlignment="Top"
+                     Width="48" Height="50" Background="Transparent" Foreground="Black" Click="HamburgerButton_Click" Padding="8,0,8,4" FontSize="26.667"/>
+                    <ListView x:Name="lstGhiChep" Margin="0,50,0,98"/>
+                    <CommandBar x:Name="abar" HorizontalAlignment="Stretch" VerticalAlignment="Bottom">
                         <AppBarButton x:Name="btnSync" Icon="Sync"  Label="Đồng bộ" Click="btnSync_Click"/>
-                        <AppBarButton x:Name="btnGhiChep" Icon="Add"  Label="Thêm"/>
+                        <AppBarButton x:Name="btnGhiChep" Icon="Add"  Label="Thêm" Click="btnGhiChep_Click"/>
                     </CommandBar>
-                </StackPanel>
+                    <TextBlock x:Name="txtTotal" Text="Tổng còn:" Margin="10,0,0,50" VerticalAlignment="Bottom" FontSize="20" FontWeight="Bold" FontStretch="UltraExpanded" Foreground="Red" Height="48"/>
+                </Grid>
             </SplitView.Content>
         </SplitView>
+        <!--Hiển thị popup chi chép-->
+        <!--<Popup x:Name="popGhiChep" IsOpen="False" IsLightDismissEnabled="True" VerticalAlignment="Bottom">
+            <Popup.ChildTransitions>
+                <TransitionCollection>
+                    <PaneThemeTransition />
+                </TransitionCollection>
+            </Popup.ChildTransitions>
+            <Border BorderBrush="{StaticResource SystemControlForegroundAccentBrush}" BorderThickness="2" Background="Black" x:Name="RootPopupBorder">
+                <StackPanel Orientation="Vertical" Background="Gray" Height="200" Width="150" x:Name="pop" >
+                    <StackPanel>
+                        <Button x:Name="btnThuTien" Content="Chi tiền" Height="50" HorizontalAlignment="Stretch" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </Popup>-->
     </Grid>
 </Page>

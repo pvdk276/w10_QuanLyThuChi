@@ -99,7 +99,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BLL\BLL_USERS.cs" />
     <Compile Include="DAL\ConnectToDB.cs" />
+    <Compile Include="DAL\DAL_USERS.cs" />
     <Compile Include="GUI\CreateAccount.xaml.cs">
       <DependentUpon>CreateAccount.xaml</DependentUpon>
     </Compile>
@@ -112,9 +114,20 @@
     <Compile Include="GUI\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Model_CHI_TIET_VAY_CHOVAY.cs" />
+    <Compile Include="Model\Model_GHI_CHEP.cs" />
+    <Compile Include="Model\Model_GUI_TIET_KIEM.cs" />
+    <Compile Include="Model\Model_HANG_MUC_CHI.cs" />
+    <Compile Include="Model\Model_HANG_MUC_CHI_CHA.cs" />
+    <Compile Include="Model\Model_HANG_MUC_THU.cs" />
+    <Compile Include="Model\Model_HANG_MUC_THU_CHA.cs" />
     <Compile Include="Model\Model_LOAI_TAI_KHOAN.cs" />
+    <Compile Include="Model\Model_LOAI_TIEN.cs" />
     <Compile Include="Model\Model_TAI_KHOAN.cs" />
+    <Compile Include="Model\Model_THIET_LAP.cs" />
     <Compile Include="Model\Model_USERS.cs" />
+    <Compile Include="Model\Model_VAY_NGAN_HANG.cs" />
+    <Compile Include="Objects\USERS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -167,7 +180,7 @@
     </SDKReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BLL\" />
+    <Folder Include="Util\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
