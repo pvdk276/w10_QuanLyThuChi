@@ -1,5 +1,8 @@
 ﻿using System.IO;
 using QuanLyThuChi.Model;
+using System;
+using System.Diagnostics;
+using QuanLyThuChi.Util;
 
 namespace QuanLyThuChi.DAL
 {
@@ -11,7 +14,7 @@ namespace QuanLyThuChi.DAL
         /// <summary>
         /// Creates the database.
         /// </summary>
-        public void createDatabase()
+        public int createDatabase()
         {
             //create database local file name "HD_db.sqlite.sqlite"
             path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "HD_db.sqlite"); 
@@ -30,6 +33,26 @@ namespace QuanLyThuChi.DAL
             conn.CreateTable<Model_THIET_LAP>();
             conn.CreateTable<Model_USERS>();
             conn.CreateTable<Model_VAY_NGAN_HANG>();
+            //Thêm record
+            try
+            {
+                EncryptPassword pass = new EncryptPassword();
+                conn.Insert(new Model_USERS()
+                {
+                    Email = "admin@heodat.com",
+                    FirstName = "Heo Đất",
+                    LastName = "Admin",
+                    Password = pass.encrypt("admin"),
+                    Type = "Admin",
+                    Status = true
+                });
+                Debug.WriteLine("[QLTC] đã thêm admin");
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine("[QLTC] " + ex.Message);
+            }
+            return 1;
         }
 
         /// <summary>

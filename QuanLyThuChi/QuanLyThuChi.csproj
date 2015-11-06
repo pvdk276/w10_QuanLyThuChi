@@ -99,7 +99,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BLL\BLL_ConnectToDB.cs" />
     <Compile Include="BLL\BLL_USERS.cs" />
+    <Compile Include="Util\EncryptPassword.cs" />
     <Compile Include="DAL\ConnectToDB.cs" />
     <Compile Include="DAL\DAL_USERS.cs" />
     <Compile Include="GUI\CreateAccount.xaml.cs">
@@ -179,9 +181,7 @@
       <Name>Windows Mobile Extensions for the UWP</Name>
     </SDKReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Util\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

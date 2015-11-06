@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using QuanLyThuChi.BLL;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -59,10 +60,10 @@ namespace QuanLyThuChi.GUI
         /// <summary>
         /// Checks the login.
         /// </summary>
-        private void checkLogin()
+        private void Logining()
         {
-            if (this.txtEmail.Text == "admin" &&
-                this.txtPassword.Password == "admin")
+            BLL_USERS bllusr = new BLL_USERS();
+            if (bllusr.checkLogin(this.txtEmail.Text,this.txtPassword.Password) == 1)
             {
                 var currentView = SystemNavigationManager.GetForCurrentView();
                 //hide back button on title
@@ -72,14 +73,14 @@ namespace QuanLyThuChi.GUI
         }
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            this.checkLogin();
+            this.Logining();
         }
 
         private void txtPassword_KeyDown(object sender, KeyRoutedEventArgs e)
         {
             if(e.Key == Windows.System.VirtualKey.Enter)
             {
-                this.checkLogin();
+                this.Logining();
             }
         }
     }

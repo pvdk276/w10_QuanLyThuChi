@@ -14,7 +14,9 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using System.Diagnostics;
 using QuanLyThuChi.GUI;
+using QuanLyThuChi.BLL;
 
 namespace QuanLyThuChi
 {
@@ -50,6 +52,12 @@ namespace QuanLyThuChi
                 this.DebugSettings.EnableFrameRateCounter = false;
             }
 #endif
+            //Khởi tạo
+            BLL_ConnectToDB bll = new BLL_ConnectToDB();
+            if (bll.checkConnect() == 1)
+                Debug.WriteLine("[QLTC] Kết nối database thành công");
+            else
+                Debug.WriteLine("[QLTC] Không thể kết nối database");
 
             Frame rootFrame = Window.Current.Content as Frame;
 

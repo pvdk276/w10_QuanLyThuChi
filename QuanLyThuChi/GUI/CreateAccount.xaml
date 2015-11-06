@@ -52,7 +52,11 @@
             <TextBox x:Name="txtEmail" HorizontalAlignment="Center" Margin="10,130,10,0" TextWrapping="Wrap" PlaceholderText="Địa chỉ email" VerticalAlignment="Top" Width="288" Height="40" FontSize="19"/>
             <PasswordBox x:Name="txtPassword" HorizontalAlignment="Center" Margin="10,180,10,0" PlaceholderText="Mật khẩu" VerticalAlignment="Top" Width="288" Height="40" FontSize="19"/>
             <PasswordBox x:Name="txtRePassword" HorizontalAlignment="Center" Margin="10,230,10,0" PlaceholderText="Nhập lại mật khẩu" VerticalAlignment="Top" Width="288" Height="40" FontSize="19" KeyDown="txtRePassword_KeyDown"/>
-            <Button x:Name="btnCreate" Content="Đăng ký" HorizontalAlignment="Left" Margin="0,310,0,0" VerticalAlignment="Top" Height="50" Width="320" Background="#FF139AF7" Foreground="White" FontSize="20" FontStretch="Condensed" FontWeight="Light" Click="btnCreate_Click"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="1" Margin="0,300,10,0" VerticalAlignment="Top" Width="230"/>
+            <TextBox x:Name="txtFirstName" HorizontalAlignment="Center" Margin="10,330,10,0" TextWrapping="Wrap" PlaceholderText="Tên" VerticalAlignment="Top" Width="288" Height="40" FontSize="19"/>
+            <TextBox x:Name="txtLastName" HorizontalAlignment="Center" Margin="10,380,10,0" TextWrapping="Wrap" PlaceholderText="Họ" VerticalAlignment="Top" Width="288" Height="40" FontSize="19"/>
+            <Button x:Name="btnCreate" Content="Đăng ký" HorizontalAlignment="Left" Margin="0,457,0,0" VerticalAlignment="Top" Height="50" Width="320" Background="#FF139AF7" Foreground="White" FontSize="20" FontStretch="Condensed" FontWeight="Light" Click="btnCreate_Click"/>
+            
         </Grid>
     </Grid>
 </Page>

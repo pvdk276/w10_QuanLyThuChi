@@ -3,6 +3,8 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Navigation;
+using QuanLyThuChi.BLL;
+using QuanLyThuChi.Objects;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -54,6 +56,29 @@ namespace QuanLyThuChi.GUI
         private void txtRePassword_KeyDown(object sender, KeyRoutedEventArgs e)
         {
 
+        }
+
+        private void createNewAccount()
+        {
+            if(this.txtEmail.Text != "" && this.txtPassword.Password != "" && 
+                this.txtRePassword.Password != "" && this.txtFirstName.Text != "" && this.txtLastName.Text != "")
+            {
+                if(this.txtPassword.Password != txtRePassword.Password)
+                {
+
+                }
+                else //Create
+                {
+                    BLL_USERS bll = new BLL_USERS();
+                    bll.insertUser(new USERS(
+                        this.txtEmail.Text,
+                        this.txtFirstName.Text,
+                        this.txtLastName.Text,
+                        this.txtPassword.Password,
+                        "User",
+                        false));
+                }
+            }
         }
     }
 }

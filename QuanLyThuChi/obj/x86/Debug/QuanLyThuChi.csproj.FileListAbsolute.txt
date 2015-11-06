@@ -685,6 +685,7 @@ D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\System.Xml.Re
 D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\System.Xml.XDocument.dll
 D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\System.Xml.XmlDocument.dll
 D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\System.Xml.XmlSerializer.dll
+D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\QuanLyThuChi.csprojResolveAssemblyReference.cache
 D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\App.g.i.cs
 D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\App.g.cs
 D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\GUI\CreateAccount.g.i.cs
