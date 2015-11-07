@@ -82,7 +82,19 @@
                         <ListView x:Name="lstGhiChep" Margin="0,50,0,98"/>
                         <CommandBar x:Name="abar" HorizontalAlignment="Stretch" VerticalAlignment="Bottom">
                             <AppBarButton x:Name="btnSync" Icon="Sync"  Label="Đồng bộ" Click="btnSync_Click"/>
-                            <AppBarButton x:Name="btnGhiChep" Icon="Add"  Label="Thêm" Click="btnGhiChep_Click"/>
+                            <AppBarButton x:Name="btnGhiChep" Icon="Add"  Label="Thêm" Click="btnGhiChep_Click">
+                                <AppBarButton.Flyout>
+                                    <Flyout>
+                                        <StackPanel Width="150" >
+                                            <TextBlock Text="Loại ghi chép" FontSize="25" Margin="0 0 0 10" />
+                                            <Button x:Name="btnGhiChep_ChiTien" Content="Chi tiền" HorizontalAlignment="Center" Margin="5" Width="137" />
+                                            <Button x:Name="btnGhiChep_ThuTien" Content="Thu tiền" HorizontalAlignment="Center" Margin="5" Width="137" />
+                                            <Button x:Name="btnGhiChep_ChuyenKhoan" Content="Chuyển khoản" HorizontalAlignment="Center" Margin="5" Width="137" />
+                                            <Button x:Name="btnGhiChep_GhiTheoTienCon" Content="Ghi theo tiền còn" HorizontalAlignment="Center" Margin="5" Width="137" />
+                                        </StackPanel>
+                                    </Flyout>
+                                </AppBarButton.Flyout>
+                            </AppBarButton>
                         </CommandBar>
                         <TextBlock x:Name="txtTotal" Text="Tổng còn:" Margin="10,0,0,50" VerticalAlignment="Bottom" FontSize="20" FontWeight="Bold" FontStretch="UltraExpanded" Foreground="Red" Height="48"/>
                     </Grid>
