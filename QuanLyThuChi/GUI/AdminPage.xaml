@@ -44,5 +44,6 @@
             <AppBarButton x:Name="btnXoa" Icon="Delete"  Label="Xóa"/>
             <AppBarButton x:Name="btnSua" Icon="Edit"  Label="Sửa"/>
         </CommandBar>
+        <GridView x:Name="gridView" HorizontalAlignment="Left" Margin="10,51,0,53" Width="340"/>
     </Grid>
 </Page>
