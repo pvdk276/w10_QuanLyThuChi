@@ -2,4 +2,6 @@ App.xbf
 GUI\CreateAccount.xbf
 GUI\Login.xbf
 GUI\MainPage.xbf
+GUI\ThietLap.xbf
+GUI\ucThietLap.xbf
 GUI\Welcome.xbf

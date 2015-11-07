@@ -53,5 +53,12 @@ namespace QuanLyThuChi
             //    popGhiChep.IsOpen = true;
             //}
         }
+
+        private void paThietLap_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            this.gridMain.Children.Clear();
+            ucThietLap uc = new ucThietLap();
+            this.gridMain.Children.Add(uc);
+        }
     }
 }

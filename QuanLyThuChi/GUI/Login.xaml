@@ -48,8 +48,8 @@
                        Text="Đăng nhập vào Heo Đất" FontSize="20" FontWeight="SemiBold" FontStretch="SemiCondensed"/>
             <TextBlock x:Name="decription" HorizontalAlignment="Center" Margin="20,60,20,0" TextWrapping="Wrap" VerticalAlignment="Top"
                        Text="Sử dụng địa chỉ email và mật khẩu đã sử dụng khi tạo tài khoản của bạn" FontSize="15" FontWeight="Thin" TextAlignment="Center" FontStretch="SemiCondensed" Width="277"/>                     
-            <TextBox x:Name="txtEmail" HorizontalAlignment="Center" Margin="10,130,10,0" TextWrapping="Wrap" PlaceholderText="Địa chỉ email" VerticalAlignment="Top" Width="288" Height="40" FontSize="19"/>
-            <PasswordBox x:Name="txtPassword" HorizontalAlignment="Center" Margin="10,180,10,0" PlaceholderText="Mật khẩu" VerticalAlignment="Top" Width="288" Height="40" FontSize="19" KeyDown="txtPassword_KeyDown"/>
+            <TextBox x:Name="txtEmail" HorizontalAlignment="Center" Margin="10,130,10,0" TextWrapping="Wrap" PlaceholderText="Địa chỉ email" VerticalAlignment="Top" Width="288" Height="40" FontSize="20"/>
+            <PasswordBox x:Name="txtPassword" HorizontalAlignment="Center" Margin="10,180,10,0" PlaceholderText="Mật khẩu" VerticalAlignment="Top" Width="288" Height="40" FontSize="20" KeyDown="txtPassword_KeyDown"/>
             <Button x:Name="btnLogin" Content="Đăng nhập" HorizontalAlignment="Left" Margin="0,240,0,0" VerticalAlignment="Top" Height="50" Width="320" Background="#FF139AF7" Foreground="White" FontSize="20" FontStretch="Condensed" FontWeight="Light" Click="btnLogin_Click"/>
             <HyperlinkButton x:Name="linkForgotPass" Content="Quên mật khẩu đăng nhập?" HorizontalAlignment="Center" Margin="20,310,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Thin" Foreground="#FF3C3C3C"/>           
         </Grid>

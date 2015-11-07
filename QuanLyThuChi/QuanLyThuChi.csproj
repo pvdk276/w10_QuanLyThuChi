@@ -93,6 +93,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="readme.txt" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
@@ -101,6 +102,15 @@
     </Compile>
     <Compile Include="BLL\BLL_ConnectToDB.cs" />
     <Compile Include="BLL\BLL_USERS.cs" />
+    <Compile Include="GUI\AdminPage.xaml.cs">
+      <DependentUpon>AdminPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ThietLap.xaml.cs">
+      <DependentUpon>ThietLap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucThietLap.xaml.cs">
+      <DependentUpon>ucThietLap.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Util\EncryptPassword.cs" />
     <Compile Include="DAL\ConnectToDB.cs" />
     <Compile Include="DAL\DAL_USERS.cs" />
@@ -156,11 +166,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="GUI\AdminPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GUI\CreateAccount.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="GUI\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\ThietLap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\ucThietLap.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

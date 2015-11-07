@@ -904,3 +904,15 @@ D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\Core\Properti
 D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\Core\QuanLyThuChi.xr.xml
 D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\Core\WinMetadata\Windows.winmd
 D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\Core\resources.pri
+D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\GUI\ThietLap.xbf
+D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\GUI\ucThietLap.xbf
+D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\GUI\ThietLap.g.i.cs
+D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\GUI\ThietLap.g.cs
+D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\GUI\ucThietLap.g.i.cs
+D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\GUI\ucThietLap.g.cs
+D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\GUI\ThietLap.xaml
+D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\GUI\ucThietLap.xaml
+D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\GUI\ThietLap.xbf
+D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\GUI\ucThietLap.xbf
+D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\readme.txt
+D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\Core\readme.txt

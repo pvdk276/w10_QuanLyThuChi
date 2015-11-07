@@ -22,7 +22,7 @@
     <AppXManifest Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-06T15:26:40.010</Modified>
+      <Modified>2015-11-07T01:00:55.690</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -64,7 +64,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\entrypoint\QuanLyThuChi.exe">
       <PackagePath>entrypoint\QuanLyThuChi.exe</PackagePath>
-      <Modified>2015-11-06T15:26:38.868</Modified>
+      <Modified>2015-11-07T01:00:53.789</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\Images\Background_1366_768.jpg">
       <PackagePath>Images\Background_1366_768.jpg</PackagePath>
@@ -108,15 +108,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\QuanLyThuChi.exe">
       <PackagePath>QuanLyThuChi.exe</PackagePath>
-      <Modified>2015-11-06T15:26:40.008</Modified>
+      <Modified>2015-11-07T01:00:55.688</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\QuanLyThuChi.xr.xml">
       <PackagePath>QuanLyThuChi.xr.xml</PackagePath>
-      <Modified>2015-11-06T08:20:54.683</Modified>
+      <Modified>2015-11-07T00:48:46.407</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\readme.txt">
+      <PackagePath>readme.txt</PackagePath>
+      <Modified>2015-11-07T00:34:58.103</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-11-06T14:57:19.642</Modified>
+      <Modified>2015-11-07T01:00:54.626</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\SQLite.Net.Async.dll">
       <PackagePath>SQLite.Net.Async.dll</PackagePath>
