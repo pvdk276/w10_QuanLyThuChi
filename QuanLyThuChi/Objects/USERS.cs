@@ -46,5 +46,32 @@ namespace QuanLyThuChi.Objects
             this.type = type;
             this.status = status;
         }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="USERS"/> class.
+        /// </summary>
+        /// <param name="email">The email.</param>
+        /// <param name="firstName">The first name.</param>
+        /// <param name="lastName">The last name.</param>
+        /// <param name="password">The password.</param>
+        /// <param name="type">The type.</param>
+        /// <param name="status">if set to <c>true</c> [status].</param>
+        /// <param name="codeChangePassword">The code change password.</param>
+        public USERS(string email,
+            string firstName,
+            string lastName,
+            string password,
+            string type,
+            bool status,
+            string codeChangePassword)
+        {
+            this.email = email;
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.password = password;
+            this.type = type;
+            this.status = status;
+            this.codeChangePassword = codeChangePassword;
+        }
     }
 }

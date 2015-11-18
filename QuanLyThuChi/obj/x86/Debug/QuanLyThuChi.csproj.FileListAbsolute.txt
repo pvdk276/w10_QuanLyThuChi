@@ -916,3 +916,8 @@ D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\GUI\ThietLap.
 D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\GUI\ucThietLap.xbf
 D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\readme.txt
 D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\Core\readme.txt
+D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\GUI\AdminPage.xbf
+D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\GUI\AdminPage.g.i.cs
+D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\GUI\AdminPage.g.cs
+D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\GUI\AdminPage.xaml
+D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\GUI\AdminPage.xbf

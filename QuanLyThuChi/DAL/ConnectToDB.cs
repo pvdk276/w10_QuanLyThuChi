@@ -3,12 +3,14 @@ using QuanLyThuChi.Model;
 using System;
 using System.Diagnostics;
 using QuanLyThuChi.Util;
+using SQLite.Net;
 
 namespace QuanLyThuChi.DAL
 {
     public class ConnectToDB
     {
         string path;    //a path to save database
+        string db_name = "HD_db.sqlite";
         SQLite.Net.SQLiteConnection conn;   //data connection
 
         /// <summary>
@@ -17,8 +19,8 @@ namespace QuanLyThuChi.DAL
         public int createDatabase()
         {
             //create database local file name "HD_db.sqlite.sqlite"
-            path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "HD_db.sqlite"); 
-            conn = new SQLite.Net.SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
+            path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, this.db_name); 
+            conn = new SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
             //Thêm bảng
             conn.CreateTable<Model_CHI_TIET_VAY_CHOVAY>();
             conn.CreateTable<Model_GHI_CHEP>();
@@ -59,7 +61,7 @@ namespace QuanLyThuChi.DAL
         /// Gets the connect.
         /// </summary>
         /// <returns></returns>
-        public SQLite.Net.SQLiteConnection getConnect()
+        public SQLiteConnection getConnect()
         {
             if (conn == null)
             {
