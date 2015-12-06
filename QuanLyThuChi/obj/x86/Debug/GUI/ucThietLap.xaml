@@ -12,6 +12,8 @@
         <HyperlinkButton x:ConnectionId='2' x:Name="linkPinCode" Content="thay đổi mã pin" FontSize="18" Margin="90,55,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <TextBlock x:ConnectionId='3' x:Name="lblTien" Text="Loại tiền chính: " FontSize="18" Margin="10,100,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <ComboBox x:ConnectionId='4' x:Name="cmbLoaiTienChinh" HorizontalAlignment="Left" Margin="140,98,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:ConnectionId='5' x:Name="lblNhapSo" Text="Nhập số: " FontSize="18" Margin="10,140,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:ConnectionId='6' x:Name="txtNhapSo" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="96,140,0,0" Width="164" InputScope="Number"/>
     </Grid>
 </UserControl>
 

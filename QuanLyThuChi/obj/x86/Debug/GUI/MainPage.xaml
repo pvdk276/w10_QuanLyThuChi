@@ -52,23 +52,30 @@
         </VisualStateManager.VisualStateGroups>
         <!--Content-->
         <SplitView x:ConnectionId='4' x:Name="MySplitView" DisplayMode="CompactOverlay"  IsPaneOpen="False" 
-                CompactPaneLength="0" OpenPaneLength="230">
+                CompactPaneLength="0" OpenPaneLength="350">
             <SplitView.Pane>
                 <Grid Background="{ThemeResource SystemControlForegroundAccentBrush}">
                     <Button x:ConnectionId='5' x:Name="HamburgerButton1" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" VerticalAlignment="Top"
                      Width="48" Height="50" Background="Transparent" Foreground="White"                               FontSize="26.667"/>
                     <StackPanel x:ConnectionId='6' x:Name="tapVi" Orientation="Horizontal"                            VerticalAlignment="Top" Margin="0,50,0,0">
-                        <Button x:ConnectionId='11' x:Name="btnVi" FontFamily="Segoe MDL2 Assets" Content="&#xE10F;"
+                        <Button x:ConnectionId='14' x:Name="btnVi" FontFamily="Segoe MDL2 Assets" Content="&#xE10F;"
                      Width="48" Height="50" Background="Transparent" Foreground="White"/>
                         <TextBlock Text="Tài khoản ví" FontSize="18" VerticalAlignment="Center" Foreground="White"/>
                     </StackPanel>
                     <StackPanel x:ConnectionId='7' x:Name="tapStk" Orientation="Horizontal" VerticalAlignment="Top" Margin="0,100,0,0">
-                        <Button x:ConnectionId='10' x:Name="btnStk" FontFamily="Segoe MDL2 Assets" Content="&#xE1D3;"
+                        <Button x:ConnectionId='13' x:Name="btnStk" FontFamily="Segoe MDL2 Assets" Content="&#xE1D3;"
                          Width="48" Height="50" Background="Transparent" Foreground="White"/>
                         <TextBlock Text="Sổ tiết kiệm" FontSize="18" VerticalAlignment="Center" Foreground="White"/>
                     </StackPanel>
-                    <StackPanel x:ConnectionId='8' x:Name="paThietLap" Orientation="Horizontal" VerticalAlignment="Bottom"                           >
-                        <Button x:ConnectionId='9' x:Name="btnThietLap" FontFamily="Segoe MDL2 Assets" Content="&#xE713;"
+                    <Border x:ConnectionId='8' x:Name="hambagerBorder" Width="250" Height="1" Margin="0,150,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Black"/>
+                    <!--Thêm tài khoản-->
+                    <StackPanel x:ConnectionId='9' x:Name="stackThemTaiKhoan" Orientation="Horizontal" VerticalAlignment="Top" Margin="0,200,0,0">
+                        <Button x:ConnectionId='12' x:Name="btnThemTaiKhoan" FontFamily="Segoe MDL2 Assets" Content="&#xE710;"
+                         Width="48" Height="50" Background="Transparent" Foreground="White"/>
+                        <TextBlock Text="Thêm tài khoản" FontSize="18" VerticalAlignment="Center" Foreground="White"/>
+                    </StackPanel>
+                    <StackPanel x:ConnectionId='10' x:Name="paThietLap" Orientation="Horizontal" VerticalAlignment="Bottom"                           >
+                        <Button x:ConnectionId='11' x:Name="btnThietLap" FontFamily="Segoe MDL2 Assets" Content="&#xE713;"
                     		Width="48" Height="50" Background="Transparent" Foreground="White"/>
                         <TextBlock Text="Thiết lập" FontSize="18" VerticalAlignment="Center" Foreground="White"/>
                     </StackPanel>
@@ -76,15 +83,15 @@
             </SplitView.Pane>
             <SplitView.Content>
                 <Grid>
-                    <Button x:ConnectionId='12' x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" HorizontalAlignment="Left" VerticalAlignment="Top"
+                    <Button x:ConnectionId='15' x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" HorizontalAlignment="Left" VerticalAlignment="Top"
                          Width="48" Height="50" Background="Transparent" Foreground="Black"                               Padding="8,0,8,4" FontSize="26.667"/>
-                    <Grid x:ConnectionId='13' x:Name="gridMain">
-                        <ListView x:ConnectionId='14' x:Name="lstGhiChep" Margin="0,50,0,98"/>
-                        <CommandBar x:ConnectionId='15' x:Name="abar" HorizontalAlignment="Stretch" VerticalAlignment="Bottom">
-                            <AppBarButton x:ConnectionId='17' x:Name="btnSync" Icon="Sync"  Label="Đồng bộ"                      />
-                            <AppBarButton x:ConnectionId='18' x:Name="btnGhiChep" Icon="Add"  Label="Thêm"                         />
+                    <Grid x:ConnectionId='16' x:Name="gridMain">
+                        <ListView x:ConnectionId='17' x:Name="lstGhiChep" Margin="0,50,0,98"/>
+                        <CommandBar x:ConnectionId='18' x:Name="abar" HorizontalAlignment="Stretch" VerticalAlignment="Bottom">
+                            <AppBarButton x:ConnectionId='20' x:Name="btnSync" Icon="Sync"  Label="Đồng bộ"                      />
+                            <AppBarButton x:ConnectionId='21' x:Name="btnGhiChep" Icon="Add"  Label="Thêm"                         />
                         </CommandBar>
-                        <TextBlock x:ConnectionId='16' x:Name="txtTotal" Text="Tổng còn:" Margin="10,0,0,50" VerticalAlignment="Bottom" FontSize="20" FontWeight="Bold" FontStretch="UltraExpanded" Foreground="Red" Height="48"/>
+                        <TextBlock x:ConnectionId='19' x:Name="txtTotal" Text="Tổng còn:" Margin="10,0,0,50" VerticalAlignment="Bottom" FontSize="20" FontWeight="Bold" FontStretch="UltraExpanded" Foreground="Red" Height="48"/>
                     </Grid>
                 </Grid>
             </SplitView.Content>
