@@ -103,6 +103,7 @@
     <Compile Include="BLL\BLL_ConnectToDB.cs" />
     <Compile Include="BLL\BLL_GhiChep.cs" />
     <Compile Include="BLL\BLL_USERS.cs" />
+    <Compile Include="DAL\ConnectToDB.cs" />
     <Compile Include="DAL\DAL_GhiChep.cs" />
     <Compile Include="GUI\AdminPage.xaml.cs">
       <DependentUpon>AdminPage.xaml</DependentUpon>
@@ -126,9 +127,6 @@
       <DependentUpon>ucThietLap.xaml</DependentUpon>
     </Compile>
     <Compile Include="Util\EncryptPassword.cs" />
-    <Compile Include="C:\Users\khoap\Desktop\ConnectToDB.cs">
-      <Link>DAL\ConnectToDB.cs</Link>
-    </Compile>
     <Compile Include="DAL\DAL_USERS.cs" />
     <Compile Include="GUI\CreateAccount.xaml.cs">
       <DependentUpon>CreateAccount.xaml</DependentUpon>

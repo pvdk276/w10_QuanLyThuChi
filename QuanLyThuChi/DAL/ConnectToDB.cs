@@ -17,13 +17,11 @@ namespace QuanLyThuChi.DAL
         /// </summary>
         public int createDatabase()
         {
-           
             //create database local file name "HD_db.sqlite.sqlite"
             path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "HD_db.sqlite");
-            conn = new SQLite.Net.SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
-            //Delete database       
             if (!File.Exists(path))
             {
+                //create database
                 conn = new SQLite.Net.SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
                 //Thêm bảng
                 conn.CreateTable<Model_CHI_TIET_VAY_CHOVAY>();
@@ -94,7 +92,11 @@ namespace QuanLyThuChi.DAL
                     Debug.WriteLine("[QLTC] " + ex.Message);
                 }
             }
-            
+            else // if file exist
+            {
+                conn = new SQLite.Net.SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
+            }
+
             return 1;
         }
 
