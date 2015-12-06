@@ -169,10 +169,12 @@
       <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
+      <RootProperty Name="Name" />
       <RootProperty Name="Header" />
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TimePicker">
+      <RootProperty Name="Name" />
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="QuanLyThuChi.GUI.ucGhiChep_ChiTien" />

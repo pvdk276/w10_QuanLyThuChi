@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="QuanLyThuChi.GUI.GhiChep"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:QuanLyThuChi.GUI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ComboBox Grid.Row="0" x:Name="cmbLoaiGhiChep" Margin="10,15,0,10" Header="Loại ghi chép" SelectionChanged="cmbLoaiGhiChep_SelectionChanged"/>
+        <Grid Grid.Row="1" x:Name="gridGhiChep">
+            
+        </Grid>
+        
+    </Grid>
+</Page>
