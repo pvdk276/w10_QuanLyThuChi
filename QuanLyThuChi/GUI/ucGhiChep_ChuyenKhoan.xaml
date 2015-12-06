@@ -7,7 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Grid>
-        <ScrollViewer VerticalScrollMode="Enabled" IsHoldingEnabled="True" VerticalScrollBarVisibility="Hidden">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <ScrollViewer Grid.Row="0" VerticalScrollMode="Enabled" IsHoldingEnabled="True" VerticalScrollBarVisibility="Hidden">
             <Grid>
                 <StackPanel>
                     <TextBox Margin="10 0 10 10" InputScope="NumberFullWidth" Text="0" Height="45" FontSize="30" FontStyle="Italic" TextAlignment="Right"/>
@@ -18,9 +22,11 @@
                     <TextBox Header="Diễn giải" Margin="10 0 10 8" AcceptsReturn="True" Height="80"/>
                     <DatePicker Header="Ngày chuyển" Margin="10 0 0 8" />
                     <TimePicker Margin="10 0 0 10" />
-                    <Button Content="Lưu ghi chép"  HorizontalAlignment="Right" Margin="0 0 10 0"/>
                 </StackPanel>
             </Grid>
         </ScrollViewer>
+        <Grid Grid.Row="1" Background="#3399FF">
+            <Button Content="Lưu ghi chép"  HorizontalAlignment="Right" Margin="0 0 10 0"/>
+        </Grid>
     </Grid>
 </UserControl>

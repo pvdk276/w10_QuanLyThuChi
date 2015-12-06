@@ -133,6 +133,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="Margin" />
+      <RootProperty Name="Name" />
       <RootProperty Name="Header" />
       <RootProperty Name="Width" />
       <RootProperty Name="HorizontalAlignment" />

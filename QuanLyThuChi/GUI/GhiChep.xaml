@@ -9,10 +9,13 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="90"/>
+            <RowDefinition Height="60"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <ComboBox Grid.Row="0" x:Name="cmbLoaiGhiChep" Margin="10,15,0,10" Header="Loại ghi chép" SelectionChanged="cmbLoaiGhiChep_SelectionChanged"/>
+        <Grid Grid.Row="0" Background="#00A59F">
+            <ComboBox x:Name="cmbLoaiGhiChep" Margin="10,15,0,10" SelectionChanged="cmbLoaiGhiChep_SelectionChanged"/>
+        </Grid>
+        
         <Grid Grid.Row="1" x:Name="gridGhiChep">
             
         </Grid>

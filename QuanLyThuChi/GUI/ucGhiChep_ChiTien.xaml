@@ -7,12 +7,16 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Margin="0 0 0 100">
-        <ScrollViewer VerticalScrollMode="Enabled" IsHoldingEnabled="True" VerticalScrollBarVisibility="Hidden">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <ScrollViewer Grid.Row="0" VerticalScrollMode="Enabled" IsHoldingEnabled="True" VerticalScrollBarVisibility="Hidden">
             <Grid>
                 <StackPanel>
-                    <TextBox Name="txbTien" Margin="10 0 10 10" InputScope="NumberFullWidth" Text="0" Height="45" FontSize="30" FontStyle="Italic" TextAlignment="Right"/>
-                    <TextBox Header="Mục chi" Margin="10 0 10 8"/>
+                    <TextBox Name="txbTien" Margin="10 10 10 10" InputScope="NumberFullWidth" Text="0" Height="45" FontSize="30" FontStyle="Italic" TextAlignment="Right"/>
+                    <ComboBox Margin="10 10 10 10" Name="cmbMucChi" Header="Mục chi"/>
                     <ComboBox Header="Từ tài khoản " Margin="10,0,0,8" >
                     </ComboBox>
                     <TextBox Name="txbDienGiai" Header="Diễn giải" Margin="10 0 10 8" AcceptsReturn="True" Height="76"/>
@@ -20,11 +24,12 @@
                     <TimePicker Name="txbGioChi" Margin="10 0 0 10" />
                     <TextBox Name="txbChiChoAi" Header="Chi cho ai" Margin="10 0 10 8"/>
                     <TextBox Name="txbSuKien" Header="Sự kiện" Margin="10 0 10 8"/>
-                    
-                    
                 </StackPanel>
             </Grid>
         </ScrollViewer>
-        <Button Content="Lưu ghi chép"  HorizontalAlignment="Right" Margin="0 0 10 0"/>
+        <Grid Grid.Row="1" Background="#00A59F">
+            <Button Content="Lưu ghi chép"  HorizontalAlignment="Right" Margin="0 0 10 0"/>
+        </Grid>
     </Grid>
+    
 </UserControl>
