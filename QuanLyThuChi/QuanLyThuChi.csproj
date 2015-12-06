@@ -105,8 +105,20 @@
     <Compile Include="GUI\AdminPage.xaml.cs">
       <DependentUpon>AdminPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GUI\GhiChep.xaml.cs">
+      <DependentUpon>GhiChep.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GUI\ThietLap.xaml.cs">
       <DependentUpon>ThietLap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucGhiChep_ChiTien.xaml.cs">
+      <DependentUpon>ucGhiChep_ChiTien.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucGhiChep_ChuyenKhoan.xaml.cs">
+      <DependentUpon>ucGhiChep_ChuyenKhoan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucGhiChep_ThuTien.xaml.cs">
+      <DependentUpon>ucGhiChep_ThuTien.xaml</DependentUpon>
     </Compile>
     <Compile Include="GUI\ucThietLap.xaml.cs">
       <DependentUpon>ucThietLap.xaml</DependentUpon>
@@ -174,11 +186,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="GUI\GhiChep.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GUI\Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="GUI\ThietLap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\ucGhiChep_ChiTien.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\ucGhiChep_ChuyenKhoan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\ucGhiChep_ThuTien.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -196,14 +224,24 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <SDKReference Include="SQLite.UAP.2015, Version=3.9.1">
-      <Name>SQLite for Universal App Platform</Name>
-    </SDKReference>
     <SDKReference Include="WindowsMobile, Version=10.0.10240.0">
       <Name>Windows Mobile Extensions for the UWP</Name>
     </SDKReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="SQLite.Net, Version=3.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\SQLite.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite.Net.Async, Version=3.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\SQLite.Net.Async.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite.Net.Platform.WinRT, Version=3.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\SQLite.Net.Platform.WinRT.dll</HintPath>
+    </Reference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

@@ -90,7 +90,7 @@
                                             <Button Tapped="btnGhiChep_ChiTien_Tapped" x:Name="btnGhiChep_ChiTien" Content="Chi tiền" HorizontalAlignment="Center" Margin="5" Width="137" />
                                             <Button Tapped="btnGhiChep_ThuTien_Tapped" x:Name="btnGhiChep_ThuTien" Content="Thu tiền" HorizontalAlignment="Center" Margin="5" Width="137" />
                                             <Button Tapped="btnGhiChep_ChuyenKhoan_Tapped" x:Name="btnGhiChep_ChuyenKhoan" Content="Chuyển khoản" HorizontalAlignment="Center" Margin="5" Width="137" />
-                                            <Button Tapped="btnGhiChep_GhiTheoTienCon_Tapped" x:Name="btnGhiChep_GhiTheoTienCon" Content="Ghi theo tiền còn" HorizontalAlignment="Center" Margin="5" Width="137" />
+                                            <!--<Button Tapped="btnGhiChep_GhiTheoTienCon_Tapped" x:Name="btnGhiChep_GhiTheoTienCon" Content="Ghi theo tiền còn" HorizontalAlignment="Center" Margin="5" Width="137" />-->
                                         </StackPanel>
                                     </Flyout>
                                 </AppBarButton.Flyout>

@@ -78,9 +78,9 @@ namespace QuanLyThuChi
             Frame.Navigate(typeof(GhiChep), 2);
         }
 
-        private void btnGhiChep_GhiTheoTienCon_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(GhiChep), 3);
-        }
+        //private void btnGhiChep_GhiTheoTienCon_Tapped(object sender, TappedRoutedEventArgs e)
+        //{
+        //    Frame.Navigate(typeof(GhiChep), 3);
+        //}
     }
 }

@@ -132,25 +132,35 @@ namespace QuanLyThuChi.QuanLyThuChi_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[8];
-            _typeNameTable[0] = "QuanLyThuChi.GUI.CreateAccount";
+            _typeNameTable = new string[13];
+            _typeNameTable[0] = "QuanLyThuChi.GUI.AdminPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "QuanLyThuChi.GUI.Login";
-            _typeNameTable[4] = "QuanLyThuChi.GUI.ThietLap";
-            _typeNameTable[5] = "QuanLyThuChi.GUI.ucThietLap";
-            _typeNameTable[6] = "QuanLyThuChi.GUI.Welcome";
-            _typeNameTable[7] = "QuanLyThuChi.MainPage";
+            _typeNameTable[3] = "QuanLyThuChi.GUI.CreateAccount";
+            _typeNameTable[4] = "QuanLyThuChi.GUI.GhiChep";
+            _typeNameTable[5] = "QuanLyThuChi.GUI.Login";
+            _typeNameTable[6] = "QuanLyThuChi.GUI.ThietLap";
+            _typeNameTable[7] = "QuanLyThuChi.GUI.ucGhiChep_ChiTien";
+            _typeNameTable[8] = "QuanLyThuChi.GUI.ucGhiChep_ChuyenKhoan";
+            _typeNameTable[9] = "QuanLyThuChi.GUI.ucGhiChep_ThuTien";
+            _typeNameTable[10] = "QuanLyThuChi.GUI.ucThietLap";
+            _typeNameTable[11] = "QuanLyThuChi.GUI.Welcome";
+            _typeNameTable[12] = "QuanLyThuChi.MainPage";
 
-            _typeTable = new global::System.Type[8];
-            _typeTable[0] = typeof(global::QuanLyThuChi.GUI.CreateAccount);
+            _typeTable = new global::System.Type[13];
+            _typeTable[0] = typeof(global::QuanLyThuChi.GUI.AdminPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::QuanLyThuChi.GUI.Login);
-            _typeTable[4] = typeof(global::QuanLyThuChi.GUI.ThietLap);
-            _typeTable[5] = typeof(global::QuanLyThuChi.GUI.ucThietLap);
-            _typeTable[6] = typeof(global::QuanLyThuChi.GUI.Welcome);
-            _typeTable[7] = typeof(global::QuanLyThuChi.MainPage);
+            _typeTable[3] = typeof(global::QuanLyThuChi.GUI.CreateAccount);
+            _typeTable[4] = typeof(global::QuanLyThuChi.GUI.GhiChep);
+            _typeTable[5] = typeof(global::QuanLyThuChi.GUI.Login);
+            _typeTable[6] = typeof(global::QuanLyThuChi.GUI.ThietLap);
+            _typeTable[7] = typeof(global::QuanLyThuChi.GUI.ucGhiChep_ChiTien);
+            _typeTable[8] = typeof(global::QuanLyThuChi.GUI.ucGhiChep_ChuyenKhoan);
+            _typeTable[9] = typeof(global::QuanLyThuChi.GUI.ucGhiChep_ThuTien);
+            _typeTable[10] = typeof(global::QuanLyThuChi.GUI.ucThietLap);
+            _typeTable[11] = typeof(global::QuanLyThuChi.GUI.Welcome);
+            _typeTable[12] = typeof(global::QuanLyThuChi.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -185,12 +195,17 @@ namespace QuanLyThuChi.QuanLyThuChi_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_CreateAccount() { return new global::QuanLyThuChi.GUI.CreateAccount(); }
-        private object Activate_3_Login() { return new global::QuanLyThuChi.GUI.Login(); }
-        private object Activate_4_ThietLap() { return new global::QuanLyThuChi.GUI.ThietLap(); }
-        private object Activate_5_ucThietLap() { return new global::QuanLyThuChi.GUI.ucThietLap(); }
-        private object Activate_6_Welcome() { return new global::QuanLyThuChi.GUI.Welcome(); }
-        private object Activate_7_MainPage() { return new global::QuanLyThuChi.MainPage(); }
+        private object Activate_0_AdminPage() { return new global::QuanLyThuChi.GUI.AdminPage(); }
+        private object Activate_3_CreateAccount() { return new global::QuanLyThuChi.GUI.CreateAccount(); }
+        private object Activate_4_GhiChep() { return new global::QuanLyThuChi.GUI.GhiChep(); }
+        private object Activate_5_Login() { return new global::QuanLyThuChi.GUI.Login(); }
+        private object Activate_6_ThietLap() { return new global::QuanLyThuChi.GUI.ThietLap(); }
+        private object Activate_7_ucGhiChep_ChiTien() { return new global::QuanLyThuChi.GUI.ucGhiChep_ChiTien(); }
+        private object Activate_8_ucGhiChep_ChuyenKhoan() { return new global::QuanLyThuChi.GUI.ucGhiChep_ChuyenKhoan(); }
+        private object Activate_9_ucGhiChep_ThuTien() { return new global::QuanLyThuChi.GUI.ucGhiChep_ThuTien(); }
+        private object Activate_10_ucThietLap() { return new global::QuanLyThuChi.GUI.ucThietLap(); }
+        private object Activate_11_Welcome() { return new global::QuanLyThuChi.GUI.Welcome(); }
+        private object Activate_12_MainPage() { return new global::QuanLyThuChi.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -202,9 +217,9 @@ namespace QuanLyThuChi.QuanLyThuChi_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  QuanLyThuChi.GUI.CreateAccount
+            case 0:   //  QuanLyThuChi.GUI.AdminPage
                 userType = new global::QuanLyThuChi.QuanLyThuChi_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_CreateAccount;
+                userType.Activator = Activate_0_AdminPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -217,37 +232,72 @@ namespace QuanLyThuChi.QuanLyThuChi_XamlTypeInfo
                 xamlType = new global::QuanLyThuChi.QuanLyThuChi_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  QuanLyThuChi.GUI.Login
+            case 3:   //  QuanLyThuChi.GUI.CreateAccount
                 userType = new global::QuanLyThuChi.QuanLyThuChi_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_Login;
+                userType.Activator = Activate_3_CreateAccount;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  QuanLyThuChi.GUI.ThietLap
+            case 4:   //  QuanLyThuChi.GUI.GhiChep
                 userType = new global::QuanLyThuChi.QuanLyThuChi_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_ThietLap;
+                userType.Activator = Activate_4_GhiChep;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  QuanLyThuChi.GUI.ucThietLap
+            case 5:   //  QuanLyThuChi.GUI.Login
+                userType = new global::QuanLyThuChi.QuanLyThuChi_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_Login;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 6:   //  QuanLyThuChi.GUI.ThietLap
+                userType = new global::QuanLyThuChi.QuanLyThuChi_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_6_ThietLap;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 7:   //  QuanLyThuChi.GUI.ucGhiChep_ChiTien
                 userType = new global::QuanLyThuChi.QuanLyThuChi_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_5_ucThietLap;
+                userType.Activator = Activate_7_ucGhiChep_ChiTien;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 6:   //  QuanLyThuChi.GUI.Welcome
-                userType = new global::QuanLyThuChi.QuanLyThuChi_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_Welcome;
+            case 8:   //  QuanLyThuChi.GUI.ucGhiChep_ChuyenKhoan
+                userType = new global::QuanLyThuChi.QuanLyThuChi_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_8_ucGhiChep_ChuyenKhoan;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  QuanLyThuChi.MainPage
+            case 9:   //  QuanLyThuChi.GUI.ucGhiChep_ThuTien
+                userType = new global::QuanLyThuChi.QuanLyThuChi_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_9_ucGhiChep_ThuTien;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 10:   //  QuanLyThuChi.GUI.ucThietLap
+                userType = new global::QuanLyThuChi.QuanLyThuChi_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_10_ucThietLap;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 11:   //  QuanLyThuChi.GUI.Welcome
                 userType = new global::QuanLyThuChi.QuanLyThuChi_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_7_MainPage;
+                userType.Activator = Activate_11_Welcome;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 12:   //  QuanLyThuChi.MainPage
+                userType = new global::QuanLyThuChi.QuanLyThuChi_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_12_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

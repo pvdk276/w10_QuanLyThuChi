@@ -1,7 +1,12 @@
 App.xbf
+GUI\AdminPage.xbf
 GUI\CreateAccount.xbf
+GUI\GhiChep.xbf
 GUI\Login.xbf
 GUI\MainPage.xbf
 GUI\ThietLap.xbf
+GUI\ucGhiChep_ChiTien.xbf
+GUI\ucGhiChep_ChuyenKhoan.xbf
+GUI\ucGhiChep_ThuTien.xbf
 GUI\ucThietLap.xbf
 GUI\Welcome.xbf

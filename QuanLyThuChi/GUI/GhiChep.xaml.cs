@@ -32,11 +32,12 @@ namespace QuanLyThuChi.GUI
                 {1,"Chi tiền"},
                 {2,"Thu tiền"},
                 {3,"Chuyển khoản"},
-                {4,"Ghi theo tiền còn"}
+                //{4,"Ghi theo tiền còn"}
             };
             cmbLoaiGhiChep.ItemsSource = dictLoaiThuChi;
             cmbLoaiGhiChep.DisplayMemberPath = "Value";
             cmbLoaiGhiChep.SelectedValuePath = "Key";
+            
             
         }
         private void App_BackRequested(object sender, BackRequestedEventArgs e)
@@ -59,6 +60,30 @@ namespace QuanLyThuChi.GUI
             base.OnNavigatedTo(e);
         }
 
+        private void cmbLoaiGhiChep_DataContextChanged(FrameworkElement sender, DataContextChangedEventArgs args)
+        {
+            
+        }
 
+        private void cmbLoaiGhiChep_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            this.gridGhiChep.Children.Clear();
+            switch (cmbLoaiGhiChep.SelectedIndex)
+            {
+                case 0:
+                    ucGhiChep_ChiTien uc1 = new ucGhiChep_ChiTien();
+                    this.gridGhiChep.Children.Add(uc1);
+                    break;
+                case 1:
+                    ucGhiChep_ThuTien uc2 = new ucGhiChep_ThuTien();
+                    this.gridGhiChep.Children.Add(uc2);
+                    break;
+                case 2:
+                    ucGhiChep_ChuyenKhoan uc3 = new ucGhiChep_ChuyenKhoan();
+                    this.gridGhiChep.Children.Add(uc3);
+                    break;
+            }
+            
+        }
     }
 }
