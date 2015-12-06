@@ -916,3 +916,5 @@ D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\GUI\ThietLap.
 D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\GUI\ucThietLap.xbf
 D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\readme.txt
 D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\Core\readme.txt
+C:\Users\s4i\Documents\GitHubVisualStudio\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\QuanLyThuChi.exe
+C:\Users\s4i\Documents\GitHubVisualStudio\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\QuanLyThuChi.pdb
