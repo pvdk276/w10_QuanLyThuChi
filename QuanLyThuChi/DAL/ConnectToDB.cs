@@ -10,6 +10,7 @@ namespace QuanLyThuChi.DAL
     public class ConnectToDB
     {
         string path;    //a path to save database
+        string db_name = "HD_db.sqlite";
         SQLite.Net.SQLiteConnection conn;   //data connection
 
         /// <summary>
@@ -104,7 +105,7 @@ namespace QuanLyThuChi.DAL
         /// Gets the connect.
         /// </summary>
         /// <returns></returns>
-        public SQLite.Net.SQLiteConnection getConnect()
+        public SQLiteConnection getConnect()
         {
             if (conn == null)
             {

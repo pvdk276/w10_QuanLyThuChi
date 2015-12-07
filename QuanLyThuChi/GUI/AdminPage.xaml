@@ -5,7 +5,7 @@
     xmlns:local="using:QuanLyThuChi.GUI"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d" Loading="Page_Loading">
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <!--AdaptiveTrigger-->
         <VisualStateManager.VisualStateGroups>
@@ -16,6 +16,7 @@
                         <AdaptiveTrigger MinWindowWidth="0"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
+                        <Setter Target="MySplitView.CompactPaneLength" Value="0" ></Setter>
                     </VisualState.Setters>
                 </VisualState>
                 <!--Tablet state-->
@@ -24,6 +25,8 @@
                         <AdaptiveTrigger MinWindowWidth="700"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
+                        <Setter Target="MySplitView.CompactPaneLength" Value="48" ></Setter>
+                        <Setter Target="HamburgerButton.Visibility" Value="Collapsed"></Setter>
                     </VisualState.Setters>
                 </VisualState>
                 <!--Desktop state-->
@@ -32,18 +35,57 @@
                         <AdaptiveTrigger MinWindowWidth="1366"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
+                        <Setter Target="MySplitView.CompactPaneLength" Value="48" ></Setter>
+                        <Setter Target="HamburgerButton.Visibility" Value="Collapsed"></Setter>
                     </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
         <!--Content-->
-        <TextBlock x:Name="lblSearch" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" Text="Search: " FontSize="18" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Margin="72,10,0,0" TextWrapping="Wrap" PlaceholderText="Nhập thông tin tìm kiếm" FontSize="18" VerticalAlignment="Top" Width="278"/>
-        <CommandBar x:Name="abar" HorizontalAlignment="Stretch" VerticalAlignment="Bottom">
-            <AppBarButton x:Name="btnSelect" Icon="SelectAll"  Label="Chọn"/>
-            <AppBarButton x:Name="btnXoa" Icon="Delete"  Label="Xóa"/>
-            <AppBarButton x:Name="btnSua" Icon="Edit"  Label="Sửa"/>
-        </CommandBar>
-        <GridView x:Name="gridView" HorizontalAlignment="Left" Margin="10,51,0,53" Width="340"/>
+        <SplitView x:Name="MySplitView" DisplayMode="CompactOverlay"  IsPaneOpen="False" 
+                CompactPaneLength="0" OpenPaneLength="230">
+            <SplitView.Pane>
+                <Grid Background="{ThemeResource SystemControlForegroundAccentBrush}">
+                    <Button x:Name="HamburgerButton1" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" VerticalAlignment="Top"
+                     Width="48" Height="50" Background="Transparent" Foreground="White" Click="HamburgerButton_Click" FontSize="26.667"/>
+                    <StackPanel x:Name="tapVi" Orientation="Horizontal" VerticalAlignment="Top" Margin="0,50,0,0">
+                        <Button x:Name="btnVi" FontFamily="Segoe MDL2 Assets" Content="&#xE10F;"
+                     Width="48" Height="50" Background="Transparent" Foreground="White"/>
+                        <TextBlock Text="Tài khoản ví" FontSize="18" VerticalAlignment="Center" Foreground="White"/>
+                    </StackPanel>
+                </Grid>
+            </SplitView.Pane>
+            <SplitView.Content>
+                <Grid>
+                    <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" HorizontalAlignment="Left" VerticalAlignment="Top"
+                         Width="48" Height="50" Background="Transparent" Foreground="Black" Click="HamburgerButton_Click" Padding="8,0,8,4" FontSize="26.667"/>
+                    <TextBlock x:Name="lblSearch" HorizontalAlignment="Left" Margin="53,15,0,0" TextWrapping="Wrap" Text="Search: " FontSize="18" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtSearch" Margin="115,10,10,0" TextWrapping="Wrap" PlaceholderText="Nhập thông tin tìm kiếm" FontSize="18" VerticalAlignment="Top"/>
+                    <ListBox x:Name="lstbUser" ItemsSource="{Binding}" Margin="0,51,0,48" SelectionChanged="lstbUser_SelectionChanged" >
+                        <ListBox.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <VirtualizingStackPanel VirtualizingStackPanel.VirtualizationMode="Recycling"/>
+                            </ItemsPanelTemplate>
+                        </ListBox.ItemsPanel>
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <TextBlock Text="{Binding email}" FontSize="20" TextWrapping="Wrap"/>
+                                    <TextBlock Text="{Binding firstName}" FontSize="15" TextWrapping="Wrap"/>
+                                    <TextBlock Text="{Binding type}" FontSize="15" TextWrapping="Wrap"/>
+                                    <TextBlock Text="{Binding password}" FontSize="15" TextWrapping="Wrap"/>
+                                    
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                    <CommandBar x:Name="abar" HorizontalAlignment="Stretch" VerticalAlignment="Bottom">
+                        <AppBarButton x:Name="btnSelect" Icon="SelectAll"  Label="Chọn"/>
+                        <AppBarButton x:Name="btnXoa" Icon="Delete"  Label="Xóa" Click="btnXoa_Click"/>
+                        <AppBarButton x:Name="btnSua" Icon="Edit"  Label="Sửa"/>
+                    </CommandBar>
+                </Grid>
+            </SplitView.Content>
+        </SplitView>
     </Grid>
 </Page>

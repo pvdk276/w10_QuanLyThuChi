@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using QuanLyThuChi.BLL;
+using Windows.UI.Popups;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -62,13 +63,28 @@ namespace QuanLyThuChi.GUI
         /// </summary>
         private void Logining()
         {
+            //Loai user
+            string loai = string.Empty;
             BLL_USERS bllusr = new BLL_USERS();
-            if (bllusr.checkLogin(this.txtEmail.Text,this.txtPassword.Password) == 1)
+            if (bllusr.checkLogin(out loai, this.txtEmail.Text, this.txtPassword.Password) == 1)
             {
                 var currentView = SystemNavigationManager.GetForCurrentView();
                 //hide back button on title
                 currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
-                Frame.Navigate(typeof(MainPage));
+                //Kiểm tra loại user
+                if (loai == "Admin") //loại là admin
+                {
+                    Frame.Navigate(typeof(AdminPage));
+                }
+                else //Loại là user
+                {
+                    Frame.Navigate(typeof(MainPage));
+                }
+            }
+            else
+            {
+                var dialog = new MessageDialog("Sai email và mật khẩu đăng nhập","Xảy ra lỗi khi đăng nhập");
+                dialog.ShowAsync();         
             }
         }
         private void btnLogin_Click(object sender, RoutedEventArgs e)
