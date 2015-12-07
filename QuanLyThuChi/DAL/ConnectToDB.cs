@@ -4,6 +4,7 @@ using System;
 using System.Diagnostics;
 using QuanLyThuChi.Util;
 using System.Collections.Generic;
+using SQLite.Net;
 
 namespace QuanLyThuChi.DAL
 {
