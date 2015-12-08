@@ -4,6 +4,9 @@ GUI\CreateAccount.xbf
 GUI\GhiChep.xbf
 GUI\Login.xbf
 GUI\MainPage.xbf
+GUI\QuanLyTK.xbf
+GUI\SuaTK.xbf
+GUI\ThemTK.xbf
 GUI\ThietLap.xbf
 GUI\ucGhiChep_ChiTien.xbf
 GUI\ucGhiChep_ChuyenKhoan.xbf
