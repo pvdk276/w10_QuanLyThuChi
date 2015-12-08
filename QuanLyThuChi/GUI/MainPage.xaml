@@ -52,7 +52,7 @@
         </VisualStateManager.VisualStateGroups>
         <!--Content-->
         <SplitView x:Name="MySplitView" DisplayMode="CompactOverlay"  IsPaneOpen="False" 
-                CompactPaneLength="0" OpenPaneLength="230">
+                CompactPaneLength="0" OpenPaneLength="350">
             <SplitView.Pane>
                 <Grid Background="{ThemeResource SystemControlForegroundAccentBrush}">
                     <Button x:Name="HamburgerButton1" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" VerticalAlignment="Top"
@@ -66,6 +66,13 @@
                         <Button x:Name="btnStk" FontFamily="Segoe MDL2 Assets" Content="&#xE1D3;"
                          Width="48" Height="50" Background="Transparent" Foreground="White"/>
                         <TextBlock Text="Sổ tiết kiệm" FontSize="18" VerticalAlignment="Center" Foreground="White"/>
+                    </StackPanel>
+                    <Border x:Name="hambagerBorder" Width="250" Height="1" Margin="0,150,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Black"/>
+                    <!--Thêm tài khoản-->
+                    <StackPanel x:Name="stackThemTaiKhoan" Orientation="Horizontal" VerticalAlignment="Top" Margin="0,200,0,0">
+                        <Button x:Name="btnThemTaiKhoan" FontFamily="Segoe MDL2 Assets" Content="&#xE710;"
+                         Width="48" Height="50" Background="Transparent" Foreground="White"/>
+                        <TextBlock Text="Thêm tài khoản" FontSize="18" VerticalAlignment="Center" Foreground="White"/>
                     </StackPanel>
                     <StackPanel x:Name="paThietLap" Orientation="Horizontal" VerticalAlignment="Bottom" Tapped="paThietLap_Tapped">
                         <Button x:Name="btnThietLap" FontFamily="Segoe MDL2 Assets" Content="&#xE713;"
@@ -82,7 +89,19 @@
                         <ListView x:Name="lstGhiChep" Margin="0,50,0,98"/>
                         <CommandBar x:Name="abar" HorizontalAlignment="Stretch" VerticalAlignment="Bottom">
                             <AppBarButton x:Name="btnSync" Icon="Sync"  Label="Đồng bộ" Click="btnSync_Click"/>
-                            <AppBarButton x:Name="btnGhiChep" Icon="Add"  Label="Thêm" Click="btnGhiChep_Click"/>
+                            <AppBarButton x:Name="btnGhiChep" Icon="Add"  Label="Thêm" Click="btnGhiChep_Click">
+                                <AppBarButton.Flyout>
+                                    <Flyout>
+                                        <StackPanel Width="155" >
+                                            <TextBlock Text="Loại ghi chép" FontSize="25" Margin="0 0 0 10" />
+                                            <Button Tapped="btnGhiChep_ChiTien_Tapped" x:Name="btnGhiChep_ChiTien" Content="Chi tiền" HorizontalAlignment="Center" Margin="5" Width="137" />
+                                            <Button Tapped="btnGhiChep_ThuTien_Tapped" x:Name="btnGhiChep_ThuTien" Content="Thu tiền" HorizontalAlignment="Center" Margin="5" Width="137" />
+                                            <Button Tapped="btnGhiChep_ChuyenKhoan_Tapped" x:Name="btnGhiChep_ChuyenKhoan" Content="Chuyển khoản" HorizontalAlignment="Center" Margin="5" Width="137" />
+                                            <!--<Button Tapped="btnGhiChep_GhiTheoTienCon_Tapped" x:Name="btnGhiChep_GhiTheoTienCon" Content="Ghi theo tiền còn" HorizontalAlignment="Center" Margin="5" Width="137" />-->
+                                        </StackPanel>
+                                    </Flyout>
+                                </AppBarButton.Flyout>
+                            </AppBarButton>
                         </CommandBar>
                         <TextBlock x:Name="txtTotal" Text="Tổng còn:" Margin="10,0,0,50" VerticalAlignment="Bottom" FontSize="20" FontWeight="Bold" FontStretch="UltraExpanded" Foreground="Red" Height="48"/>
                     </Grid>
