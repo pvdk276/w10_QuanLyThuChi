@@ -105,6 +105,15 @@
     <Compile Include="GUI\AdminPage.xaml.cs">
       <DependentUpon>AdminPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GUI\QuanLyTK.xaml.cs">
+      <DependentUpon>QuanLyTK.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SuaTK.xaml.cs">
+      <DependentUpon>SuaTK.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ThemTK.xaml.cs">
+      <DependentUpon>ThemTK.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GUI\ThietLap.xaml.cs">
       <DependentUpon>ThietLap.xaml</DependentUpon>
     </Compile>
@@ -178,6 +187,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="GUI\QuanLyTK.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\SuaTK.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\ThemTK.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GUI\ThietLap.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -196,9 +217,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <SDKReference Include="SQLite.UAP.2015, Version=3.9.1">
-      <Name>SQLite for Universal App Platform</Name>
-    </SDKReference>
     <SDKReference Include="WindowsMobile, Version=10.0.10240.0">
       <Name>Windows Mobile Extensions for the UWP</Name>
     </SDKReference>

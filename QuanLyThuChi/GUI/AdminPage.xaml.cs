@@ -93,5 +93,23 @@ namespace QuanLyThuChi.GUI
                     break;
             }
         }
+
+        private void tapThemTK_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame quanlyFrame = Window.Current.Content as Frame;
+            quanlyFrame.Navigate(typeof(ThemTK));
+        }
+
+        private void btnSua_Click(object sender, RoutedEventArgs e)
+        {
+            Frame quanlyFrame = Window.Current.Content as Frame;
+            quanlyFrame.Navigate(typeof(SuaTK));
+        }
+
+        private void tapVi_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame quanlyFrame1 = Window.Current.Content as Frame;
+            quanlyFrame1.Navigate(typeof(QuanLyTK));
+        }
     }
 }
