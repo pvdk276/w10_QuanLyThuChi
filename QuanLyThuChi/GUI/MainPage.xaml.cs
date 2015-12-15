@@ -61,21 +61,21 @@ namespace QuanLyThuChi
             this.gridMain.Children.Add(uc);
         }
 
-       
+
 
         private void btnGhiChep_ChiTien_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            Frame.Navigate(typeof(GhiChep), 0);
+           // Frame.Navigate(typeof(GhiChep), 0);
         }
 
         private void btnGhiChep_ThuTien_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            Frame.Navigate(typeof(GhiChep), 1);
+           // Frame.Navigate(typeof(GhiChep), 1);
         }
 
         private void btnGhiChep_ChuyenKhoan_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            Frame.Navigate(typeof(GhiChep), 2);
+            //Frame.Navigate(typeof(GhiChep), 2);
         }
 
         //private void btnGhiChep_GhiTheoTienCon_Tapped(object sender, TappedRoutedEventArgs e)

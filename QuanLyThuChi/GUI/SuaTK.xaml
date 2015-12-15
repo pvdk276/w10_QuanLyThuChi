@@ -86,24 +86,24 @@
                     <TextBlock x:Name="tblTenTK" HorizontalAlignment="Left" Margin="19,97,0,0" TextWrapping="Wrap" Text="Tên Tài Khoản" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="16"/>
                     <TextBox x:Name="txtTenTK" Margin="145,88,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="37" FontSize="21.333" PlaceholderText="Tên Tài Khoản" Background="#FFBFA5A5" FontStretch="Condensed" FontStyle="Italic" FontWeight="Thin"/>
                     <TextBlock x:Name="textBlock_loaiTK" HorizontalAlignment="Left" Margin="19,161,0,0" TextWrapping="Wrap" Text="Loại Tài Khoản" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="16"/>
-                    <ComboBox x:Name="cmbLoaiTK" HorizontalAlignment="Right" Margin="172,148,10,0" VerticalAlignment="Top" PlaceholderText="Tiền mặt" Height="31">
+                    <ComboBox x:Name="cmbLoaiTK" HorizontalAlignment="Left" Margin="145,148,0,0" VerticalAlignment="Top" PlaceholderText="Tiền mặt" Height="31" Width="120">
                         <ComboBoxItem Content="Tiền mặt" IsSelected="True"/>
                         <ComboBoxItem Content="Tài Khoản Ngân Hàng"/>
                         <ComboBoxItem Content="Thẻ Tín Dụng"/>
                         <ComboBoxItem Content="Khác"/>
                     </ComboBox>
                     <TextBlock x:Name="tblLoaiTienTe" HorizontalAlignment="Left" Margin="19,209,0,0" TextWrapping="Wrap" Text="Loại Tiền Tệ" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="16"/>
-                    <ComboBox x:Name="cmbLoaiTienTe" HorizontalAlignment="Right" Margin="172,204,10,0" VerticalAlignment="Top" PlaceholderText="VNĐ" IsSynchronizedWithCurrentItem="False">
+                    <ComboBox x:Name="cmbLoaiTienTe" HorizontalAlignment="Left" Margin="145,204,0,0" VerticalAlignment="Top" PlaceholderText="VNĐ" IsSynchronizedWithCurrentItem="False" Width="120">
                         <ComboBoxItem Content="VNĐ" IsSelected="True"/>
                         <ComboBoxItem Content="USD"/>
 
                     </ComboBox>
                     <TextBlock x:Name="tblTienBanDau" HorizontalAlignment="Left" Margin="19,273,0,0" TextWrapping="Wrap" Text="Số Tiền Ban Đầu" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="16"/>
-                    <TextBox x:Name="txtTienBĐ" Margin="150,273,10,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="37" FontSize="21.333" PlaceholderText="Số tiền ban đầu" Background="#FFBFA5A5" FontStretch="Condensed" FontStyle="Italic" FontWeight="Thin" TextAlignment="Right" InputScope="Number"/>
+                    <TextBox x:Name="txtTienBĐ" Margin="145,273,10,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="37" FontSize="21.333" PlaceholderText="Số tiền ban đầu" Background="#FFBFA5A5" FontStretch="Condensed" FontStyle="Italic" FontWeight="Thin" TextAlignment="Right" InputScope="Number"/>
                     <TextBlock x:Name="tblGhiChu" HorizontalAlignment="Left" Margin="19,317,0,0" TextWrapping="Wrap" Text="Ghi Chú:" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="16"/>
-                    <TextBox x:Name="txbGhiChu" Margin="80,344,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="16" PlaceholderText="Ghi Chú" FontStretch="Condensed" FontStyle="Italic" FontWeight="Thin" Background="#FFAFDC6D" Height="80"/>
-                    <Button x:Name="btnLuu" Content="Lưu" HorizontalAlignment="Center" Margin="115,540,0,65" VerticalAlignment="Top" FontWeight="Bold" FontSize="18.667" Background="#337C36AC" Height="35" Width="100"/>
-                    <Button x:Name="btnXoaTK" Content="Xóa" HorizontalAlignment="Center" Margin="72,540,188,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18.667" Background="#337C36AC" Height="35" Width="100"/>
+                    <TextBox x:Name="txbGhiChu" Margin="145,344,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="16" PlaceholderText="Ghi Chú" FontStretch="Condensed" FontStyle="Italic" FontWeight="Thin" Background="#FFAFDC6D" Height="80"/>
+                    <Button x:Name="btnLuu" Content="Lưu" HorizontalAlignment="Right" Margin="0,540,10,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18.667" Background="#337C36AC" Height="35" Width="110"/>
+                    <Button x:Name="btnXoaTK" Content="Xóa" HorizontalAlignment="Stretch" Margin="96,540,145,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18.667" Background="#337C36AC" Height="35"/>
                 </Grid>
             </SplitView.Content>
         </SplitView>

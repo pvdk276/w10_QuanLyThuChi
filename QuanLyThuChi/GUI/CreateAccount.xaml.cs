@@ -116,5 +116,10 @@ namespace QuanLyThuChi.GUI
                 }
             }
         }
+
+        private void txtFirstName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

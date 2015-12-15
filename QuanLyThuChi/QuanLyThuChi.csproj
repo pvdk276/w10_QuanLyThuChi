@@ -101,7 +101,9 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="BLL\BLL_ConnectToDB.cs" />
+    <Compile Include="BLL\BLL_TaiKhoan.cs" />
     <Compile Include="BLL\BLL_USERS.cs" />
+    <Compile Include="DAL\DAL_TaiKhoan.cs" />
     <Compile Include="GUI\AdminPage.xaml.cs">
       <DependentUpon>AdminPage.xaml</DependentUpon>
     </Compile>
@@ -120,6 +122,7 @@
     <Compile Include="GUI\ucThietLap.xaml.cs">
       <DependentUpon>ucThietLap.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Objects\TAIKHOANS.cs" />
     <Compile Include="Util\EncryptPassword.cs" />
     <Compile Include="DAL\ConnectToDB.cs" />
     <Compile Include="DAL\DAL_USERS.cs" />

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyThuChi.Objects
 {
-    public class USERS
+    public class USERS 
     {
         public string email { get; set; }
         public string firstName { get; set; }
