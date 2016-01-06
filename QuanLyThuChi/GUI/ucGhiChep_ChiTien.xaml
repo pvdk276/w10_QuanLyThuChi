@@ -17,7 +17,7 @@
                 <StackPanel>
                     <TextBox Name="txbTien" Margin="10 10 10 10" InputScope="NumberFullWidth" Text="0" Height="45" FontSize="30" FontStyle="Italic" TextAlignment="Right"/>
                     <ComboBox Margin="10 10 0 0" Name="cmbMucChi" Header="Mục chi" Width="{Binding ElementName=txbTien, Path=ActualWidth}"/>
-                    <ComboBox Header="Từ tài khoản " Margin="10,0,0,8" >
+                    <ComboBox Name="cmbTuTaiKhoan" Header="Từ tài khoản " Margin="10,0,0,8" >
                     </ComboBox>
                     <TextBox Name="txbDienGiai" Header="Diễn giải" Margin="10 0 10 8" AcceptsReturn="True" Height="76"/>
                     <DatePicker Name="txbNgayChi" Header="Ngày chi" Margin="10 0 0 8" />

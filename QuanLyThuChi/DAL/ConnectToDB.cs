@@ -87,6 +87,43 @@ namespace QuanLyThuChi.DAL
                         conn.Insert(item);
                     }
 
+                    var listLoaiTaiKhoan = new List<Model_LOAI_TAI_KHOAN>()
+                    {
+                        new Model_LOAI_TAI_KHOAN() {IdLoaiTaiKhoan = 1, TenLoaiTaiKhoan = "Ví"},
+                        new Model_LOAI_TAI_KHOAN() {IdLoaiTaiKhoan = 2, TenLoaiTaiKhoan = "Tín dụng"}
+                    };
+                    foreach (var item in listLoaiTaiKhoan)
+                    {
+                        conn.Insert(item);
+                    }
+
+                    var listTaiKhoan = new List<Model_TAI_KHOAN>()
+                    {
+                        new Model_TAI_KHOAN()
+                        {
+                            idTaiKhoan = 1,
+                            idLoaiTaiKhoan = 1,
+                            tenTaiKhoan = "Tài khoản 1",
+                            MaLoaiTien = "VNĐ",
+                            SoTienTaiKhoan = 1000000,
+                            Email = "1@1.com",
+                            GhiChu = "Tài khoản demo 1"
+                        },
+                        new Model_TAI_KHOAN()
+                        {
+                            idTaiKhoan = 2,
+                            idLoaiTaiKhoan = 2,
+                            tenTaiKhoan = "Tài khoản 2",
+                            MaLoaiTien = "VNĐ",
+                            SoTienTaiKhoan = 2000000,
+                            Email = "2@1.com",
+                            GhiChu = "Tài khoản demo 2"
+                        }
+                    };
+                    foreach (var item in listTaiKhoan)
+                    {
+                        conn.Insert(item);
+                    }
 
                 }
                 catch (Exception ex)

@@ -19,14 +19,19 @@ namespace QuanLyThuChi.GUI
 {
     public sealed partial class ucGhiChep_ChiTien : UserControl
     {
+        private BLL_HANG_MUC_CHI BLL_GhiChep;
+        private BLL_TAI_KHOAN BLL_TaiKhoan;
         public ucGhiChep_ChiTien()
         {
             this.InitializeComponent();
             txbTien.GotFocus += TxbTien_GotFocus;
             txbTien.LostFocus += TxbTien_LostFocus;
-            BLL_HANG_MUC_CHI BLL_GhiChep = new BLL_HANG_MUC_CHI();
+            BLL_GhiChep = new BLL_HANG_MUC_CHI();
+            BLL_TaiKhoan = new BLL_TAI_KHOAN();
             cmbMucChi.ItemsSource = BLL_GhiChep.GetHangMucChi();
             cmbMucChi.DisplayMemberPath = "TenHangMucChi";
+            cmbTuTaiKhoan.ItemsSource = BLL_TaiKhoan.getTaiKhoan();
+            cmbTuTaiKhoan.DisplayMemberPath = "TenLoaiTaiKhoan";
         } 
 
         private void TxbTien_LostFocus(object sender, RoutedEventArgs e)
