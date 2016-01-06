@@ -7,7 +7,7 @@ using QuanLyThuChi.Model;
 
 namespace QuanLyThuChi.DAL
 {
-    class DAL_GhiChep
+    class DAL_HANG_MUC_CHI
     {
         SQLite.Net.SQLiteConnection conn = (new ConnectToDB()).getConnect();
         public List<Model_HANG_MUC_CHI> GetHangMucChi()

@@ -24,7 +24,7 @@ namespace QuanLyThuChi.GUI
             this.InitializeComponent();
             txbTien.GotFocus += TxbTien_GotFocus;
             txbTien.LostFocus += TxbTien_LostFocus;
-            BLL_GhiChep BLL_GhiChep = new BLL_GhiChep();
+            BLL_HANG_MUC_CHI BLL_GhiChep = new BLL_HANG_MUC_CHI();
             cmbMucChi.ItemsSource = BLL_GhiChep.GetHangMucChi();
             cmbMucChi.DisplayMemberPath = "TenHangMucChi";
         } 

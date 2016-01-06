@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\s4i\Documents\GitHubVisualStudio\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-06T09:25:19.980</Modified>
+      <Modified>2015-12-06T13:28:43.081</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\s4i\Documents\GitHubVisualStudio\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\QuanLyThuChi.exe">
       <PackagePath>entrypoint\QuanLyThuChi.exe</PackagePath>
-      <Modified>2015-12-06T09:25:18.538</Modified>
+      <Modified>2015-12-06T13:28:41.708</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\s4i\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -530,7 +530,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\s4i\Documents\GitHubVisualStudio\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\QuanLyThuChi.xr.xml">
       <PackagePath>QuanLyThuChi.xr.xml</PackagePath>
-      <Modified>2015-12-06T08:55:18.971</Modified>
+      <Modified>2015-12-06T09:54:18.935</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -538,11 +538,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\s4i\Documents\GitHubVisualStudio\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-12-06T09:25:19.525</Modified>
+      <Modified>2015-12-06T13:28:42.738</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\s4i\Documents\GitHubVisualStudio\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\QuanLyThuChi.exe">
       <PackagePath>QuanLyThuChi.exe</PackagePath>
-      <Modified>2015-12-06T09:25:19.972</Modified>
+      <Modified>2015-12-06T13:28:43.079</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

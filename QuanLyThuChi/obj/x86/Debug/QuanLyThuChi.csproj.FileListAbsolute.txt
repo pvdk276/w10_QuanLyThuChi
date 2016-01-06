@@ -1043,7 +1043,6 @@ C:\Users\s4i\Documents\GitHubVisualStudio\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\
 C:\Users\s4i\Documents\GitHubVisualStudio\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\System.Xml.XDocument.dll
 C:\Users\s4i\Documents\GitHubVisualStudio\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\System.Xml.XmlDocument.dll
 C:\Users\s4i\Documents\GitHubVisualStudio\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\System.Xml.XmlSerializer.dll
-C:\Users\s4i\Documents\GitHubVisualStudio\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\QuanLyThuChi.csprojResolveAssemblyReference.cache
 C:\Users\s4i\Documents\GitHubVisualStudio\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\App.g.i.cs
 C:\Users\s4i\Documents\GitHubVisualStudio\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\App.g.cs
 C:\Users\s4i\Documents\GitHubVisualStudio\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\GUI\AdminPage.g.i.cs
@@ -1162,3 +1161,4 @@ C:\Users\s4i\Documents\GitHubVisualStudio\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\
 C:\Users\s4i\Documents\GitHubVisualStudio\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\s4i\Documents\GitHubVisualStudio\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\s4i\Documents\GitHubVisualStudio\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\s4i\Documents\GitHubVisualStudio\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\QuanLyThuChi.csprojResolveAssemblyReference.cache
