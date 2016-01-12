@@ -2,9 +2,13 @@
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
 using QuanLyThuChi.GUI;
-using Windows.ApplicationModel.Activation;
+using QuanLyThuChi.GUI.FinanceAccount;
 using System;
 using Windows.UI.Xaml.Navigation;
+using System.Collections.Generic;
+using Windows.UI.Xaml.Media;
+using QuanLyThuChi.Objects;
+using QuanLyThuChi.BLL;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -76,6 +80,22 @@ namespace QuanLyThuChi
         private void btnGhiChep_ChuyenKhoan_Tapped(object sender, TappedRoutedEventArgs e)
         {
             Frame.Navigate(typeof(GhiChep), 2);
+        }
+
+        private void paAddFinanceAccount_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(AddFinanceAccount));
+        }
+
+        private void lstAccount_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Page_Loading(FrameworkElement sender, object args)
+        {
+            BLL_TAI_KHOAN blltaikhoan = new BLL_TAI_KHOAN();
+            lstAccount.DataContext = blltaikhoan.getTaiKhoanByEmail();
         }
 
         //private void btnGhiChep_GhiTheoTienCon_Tapped(object sender, TappedRoutedEventArgs e)

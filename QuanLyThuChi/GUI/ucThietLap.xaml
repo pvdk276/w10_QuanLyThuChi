@@ -14,5 +14,7 @@
         <ComboBox x:Name="cmbLoaiTienChinh" HorizontalAlignment="Left" Margin="140,98,0,0" VerticalAlignment="Top" Width="120"/>
         <TextBlock x:Name="lblNhapSo" Text="Nhập số: " FontSize="18" Margin="10,140,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <TextBox x:Name="txtNhapSo" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="96,140,0,0" Width="164" InputScope="Number"/>
+        <TextBlock x:Name="lblLogout" Text="Đăng xuất: " FontSize="18" Margin="10,177,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <HyperlinkButton x:Name="linkLogout" Content="Đăng xuất" FontSize="18" Margin="100,177,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="linkLogout_Click"/>
     </Grid>
 </UserControl>

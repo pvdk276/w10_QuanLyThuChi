@@ -56,6 +56,19 @@ namespace QuanLyThuChi.BLL
             return 0;
         }
 
+        public int getLogin(out string loai, string email, string password)
+        {
+            //Lấy user để check
+            USERS usr = dal.getUsersByEmail(email);
+            if (usr != null && (password == usr.password))
+            {
+                loai = usr.type;
+                return 1;
+            }
+            loai = string.Empty;
+            return 0;
+        }
+
         public List<USERS> getUser()
         {
             return dal.getUser();

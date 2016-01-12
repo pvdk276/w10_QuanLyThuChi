@@ -23,5 +23,16 @@ namespace QuanLyThuChi.GUI
         {
             this.InitializeComponent();
         }
+
+        private void linkLogout_Click(object sender, RoutedEventArgs e)
+        {
+            //Lưu thông tin đăng nhập
+            var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            // Create a simple setting
+            localSettings.Values["Email"] = "";
+            localSettings.Values["Password"] = "";
+            Frame homeFrame = Window.Current.Content as Frame;
+            homeFrame.Navigate(typeof(Welcome));
+        }
     }
 }

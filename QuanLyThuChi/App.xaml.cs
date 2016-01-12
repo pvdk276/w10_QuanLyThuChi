@@ -84,8 +84,36 @@ namespace QuanLyThuChi
                 // When the navigation stack isn't restored navigate to the first page,
                 // configuring the new page by passing required information as a navigation
                 // parameter
-                rootFrame.Navigate(typeof(Welcome), e.Arguments);
+                //check user is saved
+                var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+                // get setting
+                Object email = localSettings.Values["Email"];
+                Object password = localSettings.Values["Password"];
+                BLL_USERS blluser = new BLL_USERS();
+                string loai = "";
+                if(email == null || password == null)
+                {
+                    email = "";
+                    password = "";
+                }
+                if(blluser.checkLogin(out loai,(String)email,(String)password) == 1)
+                {
+                    if(loai == "Admin")
+                    {
+                        rootFrame.Navigate(typeof(AdminPage), e.Arguments);
+                    }
+                    else
+                    {
+                        rootFrame.Navigate(typeof(MainPage), e.Arguments);
+                    }
+                    
+                }
+                else
+                {
+                    rootFrame.Navigate(typeof(Welcome), e.Arguments);
+                }
             }
+                
             //Check if device has status bar,
             //Disable status bar
             if (Windows.Foundation.Metadata.ApiInformation.IsTypePresent("Windows.Phone.UI.Input.HardwareButtons"))

@@ -20,8 +20,6 @@ namespace QuanLyThuChi.DAL
 
             //create database local file name "HD_db.sqlite.sqlite"
             path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "HD_db.sqlite");
-            //conn = new SQLite.Net.SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
-            //Delete database       
             if (!File.Exists(path))
             {
                 conn = new SQLite.Net.SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
@@ -89,42 +87,27 @@ namespace QuanLyThuChi.DAL
 
                     var listLoaiTaiKhoan = new List<Model_LOAI_TAI_KHOAN>()
                     {
-                        new Model_LOAI_TAI_KHOAN() {IdLoaiTaiKhoan = 1, TenLoaiTaiKhoan = "Ví"},
-                        new Model_LOAI_TAI_KHOAN() {IdLoaiTaiKhoan = 2, TenLoaiTaiKhoan = "Tín dụng"}
+                        new Model_LOAI_TAI_KHOAN() {IdLoaiTaiKhoan = 1, TenLoaiTaiKhoan = "Tiền mặt"},
+                        new Model_LOAI_TAI_KHOAN() {IdLoaiTaiKhoan = 2, TenLoaiTaiKhoan = "Tài khoản ngân hàng"},
+                        new Model_LOAI_TAI_KHOAN() {IdLoaiTaiKhoan = 2, TenLoaiTaiKhoan = "Thẻ tín dụng"},
+                        new Model_LOAI_TAI_KHOAN() {IdLoaiTaiKhoan = 2, TenLoaiTaiKhoan = "Tài khoản đầu tư"},
+                        new Model_LOAI_TAI_KHOAN() {IdLoaiTaiKhoan = 2, TenLoaiTaiKhoan = "Khác"},
                     };
                     foreach (var item in listLoaiTaiKhoan)
                     {
                         conn.Insert(item);
                     }
 
-                    var listTaiKhoan = new List<Model_TAI_KHOAN>()
+                    var lisLoaiTien = new List<Model_LOAI_TIEN>()
                     {
-                        new Model_TAI_KHOAN()
-                        {
-                            idTaiKhoan = 1,
-                            idLoaiTaiKhoan = 1,
-                            tenTaiKhoan = "Tài khoản 1",
-                            MaLoaiTien = "VNĐ",
-                            SoTienTaiKhoan = 1000000,
-                            Email = "1@1.com",
-                            GhiChu = "Tài khoản demo 1"
-                        },
-                        new Model_TAI_KHOAN()
-                        {
-                            idTaiKhoan = 2,
-                            idLoaiTaiKhoan = 2,
-                            tenTaiKhoan = "Tài khoản 2",
-                            MaLoaiTien = "VNĐ",
-                            SoTienTaiKhoan = 2000000,
-                            Email = "2@1.com",
-                            GhiChu = "Tài khoản demo 2"
-                        }
+                        new Model_LOAI_TIEN() {MaLoaiTien="VND",TenLoaiTien="Việt Nam Đồng",TyGiaSoVoiUSD=22426.5f},
+                        new Model_LOAI_TIEN() {MaLoaiTien="USD",TenLoaiTien="Đô La Mỹ",TyGiaSoVoiUSD=1},
+                        new Model_LOAI_TIEN() {MaLoaiTien="EUR",TenLoaiTien="Euro",TyGiaSoVoiUSD=0.92f},
                     };
-                    foreach (var item in listTaiKhoan)
+                    foreach (var item in lisLoaiTien)
                     {
                         conn.Insert(item);
                     }
-
                 }
                 catch (Exception ex)
                 {

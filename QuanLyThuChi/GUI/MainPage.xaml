@@ -5,7 +5,7 @@
     xmlns:local="using:QuanLyThuChi"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d" Loading="Page_Loading">
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <!--AdaptiveTrigger-->
         <VisualStateManager.VisualStateGroups>
@@ -67,9 +67,24 @@
                          Width="48" Height="50" Background="Transparent" Foreground="White"/>
                         <TextBlock Text="Sổ tiết kiệm" FontSize="18" VerticalAlignment="Center" Foreground="White"/>
                     </StackPanel>
-                    <Border x:Name="hambagerBorder" Width="250" Height="1" Margin="0,150,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Black"/>
+                    <ListBox x:Name="lstAccount" ItemsSource="{Binding}" Margin="0,255,0,55" SelectionChanged="lstAccount_SelectionChanged" Background="Transparent">
+                        <ListBox.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <VirtualizingStackPanel VirtualizingStackPanel.VirtualizationMode="Recycling"/>
+                            </ItemsPanelTemplate>
+                        </ListBox.ItemsPanel>
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Button FontFamily="Segoe MDL2 Assets" Content="&#xE1D3;" Width="48" Height="50" Background="Transparent" Foreground="White"/>
+                                    <TextBlock Text="{Binding tenTaiKhoan}" FontSize="18" VerticalAlignment="Center" Foreground="White"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                    <Border x:Name="hambagerBorder" Height="1" BorderThickness="1" Margin="0,194,0,0" VerticalAlignment="Top" BorderBrush="White" HorizontalAlignment="Left" Width="350"/>
                     <!--Thêm tài khoản-->
-                    <StackPanel x:Name="stackThemTaiKhoan" Orientation="Horizontal" VerticalAlignment="Top" Margin="0,200,0,0">
+                    <StackPanel x:Name="stackThemTaiKhoan" Orientation="Horizontal" VerticalAlignment="Top" Margin="0,200,0,0" Tapped="paAddFinanceAccount_Tapped">
                         <Button x:Name="btnThemTaiKhoan" FontFamily="Segoe MDL2 Assets" Content="&#xE710;"
                          Width="48" Height="50" Background="Transparent" Foreground="White"/>
                         <TextBlock Text="Thêm tài khoản" FontSize="18" VerticalAlignment="Center" Foreground="White"/>

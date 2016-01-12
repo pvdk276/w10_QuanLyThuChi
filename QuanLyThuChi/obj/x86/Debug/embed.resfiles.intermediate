@@ -1,6 +1,7 @@
 App.xbf
-GUI\AdminPage.xbf
-GUI\CreateAccount.xbf
+GUI\Admin\AdminPage.xbf
+GUI\Admin\CreateAccount.xbf
+GUI\FinanceAccount\AddFinanceAccount.xbf
 GUI\GhiChep.xbf
 GUI\Login.xbf
 GUI\MainPage.xbf
@@ -9,4 +10,5 @@ GUI\ucGhiChep_ChiTien.xbf
 GUI\ucGhiChep_ChuyenKhoan.xbf
 GUI\ucGhiChep_ThuTien.xbf
 GUI\ucThietLap.xbf
+GUI\Util\ucCalculator.xbf
 GUI\Welcome.xbf

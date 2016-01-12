@@ -16,5 +16,27 @@ namespace QuanLyThuChi.BLL
         {
             return Dal_Tai_Khoan.GetTaiKhoan();
         }
+        
+        public List<TAIKHOAN> getTaiKhoanByEmail()
+        {
+            var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            // get setting
+            Object email = localSettings.Values["Email"];
+            return Dal_Tai_Khoan.GetTaiKhoanByEmail(email.ToString());
+        }
+        public List<LOAITAIKHOAN> getLoaiTaiKhoan()
+        {
+            return Dal_Tai_Khoan.getLoaiTaiKhoan();
+        }
+
+        public int insertAccount(TAIKHOAN taikhoan)
+        {
+            return Dal_Tai_Khoan.insertAccount(taikhoan.tenTaiKhoan,
+                taikhoan.idLoaiTaiKhoan,
+                taikhoan.MaLoaiTien,
+                taikhoan.GhiChu,
+                taikhoan.SoTienTaiKhoan,
+                taikhoan.Email);
+        }
     }
 }

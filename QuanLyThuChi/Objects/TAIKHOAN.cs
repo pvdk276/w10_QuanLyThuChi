@@ -8,11 +8,11 @@ namespace QuanLyThuChi.Objects
 {
     class TAIKHOAN
     {
-        public int IdTaiKhoan { get; set; }
+        public int idTaiKhoan { get; set; }
 
-        public string TenTaiKhoan { get; set; }
+        public string tenTaiKhoan { get; set; }
 
-        public int IdLoaiTaiKhoan { get; set; }   
+        public int idLoaiTaiKhoan { get; set; }   
         
         public string TenLoaiTaiKhoan { get; set; } 
 
@@ -26,16 +26,24 @@ namespace QuanLyThuChi.Objects
 
         public TAIKHOAN(int idTaiKhoan, string tenTaiKhoan, int idLoaiTaiKhoan, string tenLoaiTaiKhoan, string maLoaiTien, string ghiChu, long soTienTaiKhoan, string email)
         {
-            IdTaiKhoan = idTaiKhoan;
-            TenTaiKhoan = tenTaiKhoan;
-            IdLoaiTaiKhoan = idLoaiTaiKhoan;
+            this.idTaiKhoan = idTaiKhoan;
+            tenTaiKhoan = tenTaiKhoan;
+            idLoaiTaiKhoan = idLoaiTaiKhoan;
             TenLoaiTaiKhoan = tenLoaiTaiKhoan;
             MaLoaiTien = maLoaiTien;
             GhiChu = ghiChu;
             SoTienTaiKhoan = soTienTaiKhoan;
             Email = email;
         }
-
+        public TAIKHOAN(string tenTaiKhoan, int idLoaiTaiKhoan, string maLoaiTien, string ghiChu, long soTienTaiKhoan, string email)
+        {
+            tenTaiKhoan = tenTaiKhoan;
+            idLoaiTaiKhoan = idLoaiTaiKhoan;
+            MaLoaiTien = maLoaiTien;
+            GhiChu = ghiChu;
+            SoTienTaiKhoan = soTienTaiKhoan;
+            Email = email;
+        }
         public TAIKHOAN()
         {
         }

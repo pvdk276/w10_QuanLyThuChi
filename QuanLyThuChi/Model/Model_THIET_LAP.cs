@@ -6,7 +6,7 @@ namespace QuanLyThuChi.Model
     public class Model_THIET_LAP
     {
         [PrimaryKey,AutoIncrement]
-        public uint IdThietLap { get; set; }
+        public int IdThietLap { get; set; }
         public ushort PinCode { get; set; }
         public DateTime NhacNhoGhiChep { get; set; }
         [MaxLength(4)]

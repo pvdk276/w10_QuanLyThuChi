@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Core;
+﻿using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -15,6 +8,9 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using QuanLyThuChi.BLL;
 using Windows.UI.Popups;
+using System.Threading.Tasks;
+using Windows.Storage;
+using System.IO;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -61,7 +57,7 @@ namespace QuanLyThuChi.GUI
         /// <summary>
         /// Checks the login.
         /// </summary>
-        private void Logining()
+        private async void Logining()
         {
             //Loai user
             string loai = string.Empty;
@@ -80,11 +76,17 @@ namespace QuanLyThuChi.GUI
                 {
                     Frame.Navigate(typeof(MainPage));
                 }
+
+                //Lưu thông tin đăng nhập
+                var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+                // Create a simple setting
+                localSettings.Values["Email"] = this.txtEmail.Text;
+                localSettings.Values["Password"] = this.txtPassword.Password;
             }
             else
             {
-                var dialog = new MessageDialog("Sai email và mật khẩu đăng nhập","Xảy ra lỗi khi đăng nhập");
-                dialog.ShowAsync();         
+                var dialog = new MessageDialog("Sai email và mật khẩu đăng nhập", "Xảy ra lỗi khi đăng nhập");
+                dialog.ShowAsync();
             }
         }
         private void btnLogin_Click(object sender, RoutedEventArgs e)

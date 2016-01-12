@@ -102,12 +102,17 @@
     </Compile>
     <Compile Include="BLL\BLL_ConnectToDB.cs" />
     <Compile Include="BLL\BLL_HANG_MUC_CHI.cs" />
+    <Compile Include="BLL\BLL_LOAI_TIEN.cs" />
     <Compile Include="BLL\BLL_TAI_KHOAN.cs" />
     <Compile Include="BLL\BLL_USERS.cs" />
     <Compile Include="DAL\DAL_HANG_MUC_CHI.cs" />
+    <Compile Include="DAL\DAL_LOAI_TIEN.cs" />
     <Compile Include="DAL\DAL_TAI_KHOAN.cs" />
-    <Compile Include="GUI\AdminPage.xaml.cs">
+    <Compile Include="GUI\Admin\AdminPage.xaml.cs">
       <DependentUpon>AdminPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FinanceAccount\AddFinanceAccount.xaml.cs">
+      <DependentUpon>AddFinanceAccount.xaml</DependentUpon>
     </Compile>
     <Compile Include="GUI\GhiChep.xaml.cs">
       <DependentUpon>GhiChep.xaml</DependentUpon>
@@ -127,11 +132,16 @@
     <Compile Include="GUI\ucThietLap.xaml.cs">
       <DependentUpon>ucThietLap.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Util\ucCalculator.xaml.cs">
+      <DependentUpon>ucCalculator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\LOAITAIKHOAN.cs" />
+    <Compile Include="Objects\LOAI_TIEN.cs" />
     <Compile Include="Objects\TAIKHOAN.cs" />
     <Compile Include="Util\EncryptPassword.cs" />
     <Compile Include="DAL\ConnectToDB.cs" />
     <Compile Include="DAL\DAL_USERS.cs" />
-    <Compile Include="GUI\CreateAccount.xaml.cs">
+    <Compile Include="GUI\Admin\CreateAccount.xaml.cs">
       <DependentUpon>CreateAccount.xaml</DependentUpon>
     </Compile>
     <Compile Include="GUI\Login.xaml.cs">
@@ -183,11 +193,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="GUI\AdminPage.xaml">
+    <Page Include="GUI\Admin\AdminPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="GUI\CreateAccount.xaml">
+    <Page Include="GUI\Admin\CreateAccount.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\FinanceAccount\AddFinanceAccount.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -216,6 +230,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="GUI\ucThietLap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\Util\ucCalculator.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
