@@ -39,6 +39,11 @@ namespace QuanLyThuChi.BLL
 
         public int insertAccount(TAIKHOAN taikhoan)
         {
+            foreach(TAIKHOAN item in this.getTaiKhoanByEmail())
+            {
+                if (taikhoan.tenTaiKhoan == item.tenTaiKhoan)
+                    return 2;
+            }
             return Dal_Tai_Khoan.insertAccount(taikhoan.tenTaiKhoan,
                 taikhoan.idLoaiTaiKhoan,
                 taikhoan.MaLoaiTien,

@@ -24,11 +24,18 @@ namespace QuanLyThuChi.DAL
         {
             var query =
                 conn.Query<TAIKHOAN>(
-                    "select * from Model_TAI_KHOAN where email='" + email + "'")
+                    "select * from Model_TAI_KHOAN where Email='" + email + "'")
                     .ToList();
             return query;
         }
-
+        public TAIKHOAN GetTaiKhoanByEmailAndName(string email, string name)
+        {
+            var query =
+                conn.Query<TAIKHOAN>(
+                    "select * from Model_TAI_KHOAN where Email='" + email + "' and tenTaiKhoan='"+ name +"'")
+                    .ToList().FirstOrDefault();
+            return query;
+        }
         public List<LOAITAIKHOAN> getLoaiTaiKhoan()
         {
             var query =
@@ -56,6 +63,23 @@ namespace QuanLyThuChi.DAL
                 Email = _Email
             }) == 0)
                 return 0;       //error
+            return 1;
+        }
+
+        public int editAccount(string _tenTaiKhoan,
+            long _SoTienTaiKhoan,
+            string _Email)
+        {
+            //edit data to Model_TAI_KHOAN
+            var query = conn.Query<Model_TAI_KHOAN>("Update Model_TAI_KHOAN set SoTienTaiKhoan = " + _SoTienTaiKhoan + " where tenTaiKhoan= '" +
+                _tenTaiKhoan + "' and Email='" + _Email + "'");
+            //var account = conn.Table<Model_TAI_KHOAN>().Where(x => x.tenTaiKhoan == _tenTaiKhoan && x.Email == _Email).FirstOrDefault();
+            //if (account != null)
+            //{
+            //    account.SoTienTaiKhoan = _SoTienTaiKhoan;
+            //    conn.Update(account);
+            //    return 1;
+            //}
             return 1;
         }
     }

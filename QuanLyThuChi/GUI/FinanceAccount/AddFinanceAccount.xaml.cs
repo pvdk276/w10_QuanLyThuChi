@@ -71,9 +71,15 @@ namespace QuanLyThuChi.GUI.FinanceAccount
                 txtNote.Text,
                 long.Parse(txtMoney.Text),
                 email.ToString());
-            if(bllTaiKhoan.insertAccount(tk) == 1)
+            int result = bllTaiKhoan.insertAccount(tk);
+            if (result == 1)
             {
                 var dialog = new MessageDialog("Tạo tài khoản thành công");
+                dialog.ShowAsync();
+            }
+            else if(result == 2)
+            {
+                var dialog = new MessageDialog("Tài khoản đã tồn tại");
                 dialog.ShowAsync();
             }
             else

@@ -4,8 +4,6 @@ namespace QuanLyThuChi.Model
 {
     public class Model_TAI_KHOAN
     {
-        [PrimaryKey,AutoIncrement]
-        public int idTaiKhoan { get; set; }
         [MaxLength(100),NotNull]
         public string tenTaiKhoan { get; set; }
         [Indexed]

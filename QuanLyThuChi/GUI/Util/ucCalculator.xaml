@@ -27,7 +27,8 @@
         <Button x:Name="btn2" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="85,276,0,0" Height="46" Width="68" Background="#d9d9d9" Foreground="Black" Click="btn2_Click"/>
         <Button x:Name="btn3" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="158,276,0,0" Height="46" Width="68" Background="#d9d9d9" Foreground="Black" Click="btn3_Click"/>
         <Button x:Name="btn000" Content="000" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="231,276,0,0" Height="46" Width="68" Background="#d9d9d9" Foreground="Black" Click="btn000_Click"/>
-        <Button x:Name="btnComma" Content="," HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,327,0,-6" Height="46" Width="68" Background="#d9d9d9" Foreground="Black" Click="btnComma_Click"/>
-        <Button x:Name="btnEqual" Content="=" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="85,327,0,-6" Height="46" Width="214" Background="#FF139AF7" Foreground="Black" Click="btnEqual_Click"/>
+        <Button x:Name="btn0" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,327,0,-6" Height="46" Width="68" Background="#d9d9d9" Foreground="Black" Click="btn0_Click"/>
+        <Button x:Name="btnComma" Content="," HorizontalAlignment="Left" VerticalAlignment="Top" Margin="86,328,0,0" Height="46" Width="68" Background="#d9d9d9" Foreground="Black" Click="btnComma_Click"/>
+        <Button x:Name="btnEqual" Content="=" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="159,328,0,0" Height="46" Width="141" Background="#FF139AF7" Foreground="Black" Click="btnEqual_Click"/>
     </Grid>
 </UserControl>

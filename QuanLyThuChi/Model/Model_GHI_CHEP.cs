@@ -11,9 +11,9 @@ namespace QuanLyThuChi.Model
     {
         [PrimaryKey,AutoIncrement]
         public uint IdGhiChep { get; set; }
-        public byte Ngay { get; set; }
-        public byte Thang { get; set; }
-        public ushort Nam { get; set; }
+        public int Ngay { get; set; }
+        public int Thang { get; set; }
+        public int Nam { get; set; }
         [MaxLength(5)]
         public string Gio { get; set; } //00:00
         [MaxLength(3)]

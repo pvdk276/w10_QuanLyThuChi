@@ -242,11 +242,27 @@ namespace QuanLyThuChi.GUI.Util
             }
         }
 
+        private void btn0_Click(object sender, RoutedEventArgs e)
+        {
+            if (isX || isDiv || isPlus || isMinus)
+            {
+                if (number2 != "")
+                    number2 += "0";
+                txtResult.Text = number2;
+            }
+            else
+            {
+                if(number1 != "")
+                    number1 += "0";
+                txtResult.Text = number1;
+            }
+        }
         private void btn000_Click(object sender, RoutedEventArgs e)
         {
             if (isX || isDiv || isPlus || isMinus)
             {
-                number2 += "000";
+                if (number2 != "")
+                    number2 += "000";
                 txtResult.Text = number2;
             }
             else
@@ -302,5 +318,7 @@ namespace QuanLyThuChi.GUI.Util
             isMinus = false;
             isPlus = false;
         }
+
+        
     }
 }

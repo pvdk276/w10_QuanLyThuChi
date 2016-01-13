@@ -97,6 +97,10 @@ namespace QuanLyThuChi
         {
             BLL_TAI_KHOAN blltaikhoan = new BLL_TAI_KHOAN();
             lstAccount.DataContext = blltaikhoan.getTaiKhoanByEmail();
+
+            //ghi chep
+            BLL_GHI_CHEP bll = new BLL_GHI_CHEP();
+            lstbGhiChep.DataContext = bll.getGhiChepByEmail();
         }
 
         private void stkHome_Tapped(object sender, TappedRoutedEventArgs e)
@@ -105,6 +109,11 @@ namespace QuanLyThuChi
         }
 
         private void stkVayNo_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+
+        }
+
+        private void lstbGhiChep_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }

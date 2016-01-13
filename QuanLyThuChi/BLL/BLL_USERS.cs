@@ -14,6 +14,7 @@ namespace QuanLyThuChi.BLL
     {
         DAL_USERS dal = new DAL_USERS();
         DAL_TAI_KHOAN dalTk = new DAL_TAI_KHOAN();
+        DAL_HANG_MUC_CHI dalhmc = new DAL_HANG_MUC_CHI();
         /// <summary>
         /// Inserts the user.
         /// </summary>
@@ -25,29 +26,35 @@ namespace QuanLyThuChi.BLL
             EncryptPassword encryptPass = new EncryptPassword();
             string newPass = encryptPass.encrypt(user.password);
             //insert
-            if(dal.insertUser(user.email, 
-                user.firstName, 
-                user.lastName, 
-                newPass, 
-                user.type, 
+            if (dal.insertUser(user.email,
+                user.firstName,
+                user.lastName,
+                newPass,
+                user.type,
                 user.status) == 1)
             {
                 dalTk.insertAccount("Ví", 0, "VND", "", 0, user.email);
                 dalTk.insertAccount("Heo đất", 4, "VND", "", 0, user.email);
+
+                dalhmc.insert(1, "Quần áo", "", false, user.email);
+                dalhmc.insert(1, "Giầy dép", "", false, user.email);
+                dalhmc.insert(2, "Khác", "", false, user.email);
+                dalhmc.insert(2, "Đi chợ/Siêu thị", "", false, user.email);
+                dalhmc.insert(2, "Ăn tiệm", "", false, user.email);
             }
             else { return 0; }
 
-            return 1;
+            return 1;  
         }
 
-        /// <summary>
-        /// Kiểm tra thông tin đăng nhập.
-        /// </summary>
-        /// <param name="loai">Loại user.</param>
-        /// <param name="email">The email.</param>
-        /// <param name="password">The password.</param>
-        /// <returns></returns>
-        public int checkLogin(out string loai,string email, string password)
+    /// <summary>
+    /// Kiểm tra thông tin đăng nhập.
+    /// </summary>
+    /// <param name="loai">Loại user.</param>
+    /// <param name="email">The email.</param>
+    /// <param name="password">The password.</param>
+    /// <returns></returns>
+    public int checkLogin(out string loai,string email, string password)
         {
             //Encrypt password
             EncryptPassword encryptPass = new EncryptPassword();

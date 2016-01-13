@@ -71,21 +71,6 @@ namespace QuanLyThuChi.DAL
                         conn.Insert(item);
                     }
 
-
-                    var listHangMucChi = new List<Model_HANG_MUC_CHI>()
-                    {
-                        new Model_HANG_MUC_CHI() {IdHangMucChi=0, IdHangMucChiCha=1,TenHangMucChi="Quần áo",ChinhSuaHangMucChi=false,GhiChuHangMucChi="Mua sắm quần áo" },
-                        new Model_HANG_MUC_CHI() {IdHangMucChi=1, IdHangMucChiCha=1,TenHangMucChi="Giầy dép",ChinhSuaHangMucChi=false,GhiChuHangMucChi="Mua sắm giầy dép" },
-                        new Model_HANG_MUC_CHI() {IdHangMucChi=2, IdHangMucChiCha=1,TenHangMucChi="Khác",ChinhSuaHangMucChi=false,GhiChuHangMucChi="Mua sắm" },
-                        new Model_HANG_MUC_CHI() {IdHangMucChi=3, IdHangMucChiCha=2,TenHangMucChi="Đi chợ/Siêu thị",ChinhSuaHangMucChi=false,GhiChuHangMucChi="Đi chợ, siêu thị" },
-                        new Model_HANG_MUC_CHI() {IdHangMucChi=4, IdHangMucChiCha=2,TenHangMucChi="Ăn tiệm",ChinhSuaHangMucChi=false,GhiChuHangMucChi="Ăn tiệm" }
-                    };
-
-                    foreach (var item in listHangMucChi)
-                    {
-                        conn.Insert(item);
-                    }
-
                     var listLoaiTaiKhoan = new List<Model_LOAI_TAI_KHOAN>()
                     {
                         new Model_LOAI_TAI_KHOAN() {IdLoaiTaiKhoan = 0, TenLoaiTaiKhoan = "Tiền mặt"},

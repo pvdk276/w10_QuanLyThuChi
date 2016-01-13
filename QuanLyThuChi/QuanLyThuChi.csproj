@@ -101,10 +101,12 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="BLL\BLL_ConnectToDB.cs" />
+    <Compile Include="BLL\BLL_GHI_CHEP.cs" />
     <Compile Include="BLL\BLL_HANG_MUC_CHI.cs" />
     <Compile Include="BLL\BLL_LOAI_TIEN.cs" />
     <Compile Include="BLL\BLL_TAI_KHOAN.cs" />
     <Compile Include="BLL\BLL_USERS.cs" />
+    <Compile Include="DAL\DAL_GHI_CHEP.cs" />
     <Compile Include="DAL\DAL_HANG_MUC_CHI.cs" />
     <Compile Include="DAL\DAL_LOAI_TIEN.cs" />
     <Compile Include="DAL\DAL_TAI_KHOAN.cs" />
@@ -135,6 +137,8 @@
     <Compile Include="GUI\Util\ucCalculator.xaml.cs">
       <DependentUpon>ucCalculator.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Objects\GHI_CHEP.cs" />
+    <Compile Include="Objects\HANG_MUC_CHI.cs" />
     <Compile Include="Objects\LOAITAIKHOAN.cs" />
     <Compile Include="Objects\LOAI_TIEN.cs" />
     <Compile Include="Objects\TAIKHOAN.cs" />

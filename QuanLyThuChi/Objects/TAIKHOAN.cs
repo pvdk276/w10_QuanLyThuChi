@@ -26,9 +26,8 @@ namespace QuanLyThuChi.Objects
 
         public string Email { get; set; }
 
-        public TAIKHOAN(int idTaiKhoan, string _tenTaiKhoan, int _idLoaiTaiKhoan, string tenLoaiTaiKhoan, string maLoaiTien, string ghiChu, long soTienTaiKhoan, string email)
+        public TAIKHOAN(string _tenTaiKhoan, int _idLoaiTaiKhoan, string tenLoaiTaiKhoan, string maLoaiTien, string ghiChu, long soTienTaiKhoan, string email)
         {
-            this.idTaiKhoan = idTaiKhoan;
             tenTaiKhoan = _tenTaiKhoan;
             idLoaiTaiKhoan = _idLoaiTaiKhoan;
             TenLoaiTaiKhoan = tenLoaiTaiKhoan;

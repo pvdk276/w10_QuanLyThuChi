@@ -108,7 +108,35 @@
                     <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" HorizontalAlignment="Left" VerticalAlignment="Top"
                          Width="48" Height="50" Background="Transparent" Foreground="Black" Click="HamburgerButton_Click" Padding="8,0,8,4" FontSize="26.667"/>
                     <Grid x:Name="gridMain">
-                        <ListView x:Name="lstGhiChep" Margin="0,50,0,98"/>
+                        <ListBox x:Name="lstbGhiChep" ItemsSource="{Binding}" Margin="0,47,0,103" SelectionChanged="lstbGhiChep_SelectionChanged" Background="Transparent">
+                            <ListBox.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <VirtualizingStackPanel VirtualizingStackPanel.VirtualizationMode="Recycling"/>
+                                </ItemsPanelTemplate>
+                            </ListBox.ItemsPanel>
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Vertical">
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="{Binding Ngay}" FontSize="20" TextWrapping="Wrap"/>
+                                            <TextBlock Text="/" FontSize="20" TextWrapping="Wrap"/>
+                                            <TextBlock Text="{Binding Thang}" FontSize="20" TextWrapping="Wrap"/>
+                                            <TextBlock Text="/" FontSize="20" TextWrapping="Wrap"/>
+                                            <TextBlock Text="{Binding Nam}" FontSize="20" TextWrapping="Wrap"/>
+                                            <TextBlock Text="{Binding ThuChiChuyenKhoan}" FontSize="20" TextWrapping="Wrap" HorizontalAlignment="Right"/>
+                                        </StackPanel>
+                                        <TextBlock Name="txttuTk" Text="{Binding TuTaiKhoan}" FontSize="20" TextWrapping="Wrap"/>
+                                        <TextBlock Name="txtdenTK" Text="{Binding DenTaiKhoan}" FontSize="20" TextWrapping="Wrap"/>
+                                        <TextBlock Name ="txtmucthu" Text="{Binding MucThu}" FontSize="15" TextWrapping="Wrap"/>
+                                        <TextBlock Name ="txtmucchi" Text="{Binding MucChi}" FontSize="15" TextWrapping="Wrap"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="{Binding SoTien}" FontSize="15" TextWrapping="Wrap" HorizontalAlignment="Right"/>
+                                            <TextBlock Text="{Binding MaLoaiTien}" FontSize="15" TextWrapping="Wrap" HorizontalAlignment="Right"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
                         <CommandBar x:Name="abar" HorizontalAlignment="Stretch" VerticalAlignment="Bottom">
                             <AppBarButton x:Name="btnSync" Icon="Sync"  Label="Đồng bộ" Click="btnSync_Click"/>
                             <AppBarButton x:Name="btnGhiChep" Icon="Add"  Label="Thêm" Click="btnGhiChep_Click">

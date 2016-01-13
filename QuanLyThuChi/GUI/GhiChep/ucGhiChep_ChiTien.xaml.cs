@@ -14,22 +14,25 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using QuanLyThuChi.BLL;
 using QuanLyThuChi.GUI.Util;
+using QuanLyThuChi.Objects;
+using Windows.UI.Popups;
+
 // The User Control item template is documented at http://go.microsoft.com/fwlink/?LinkId=234236
 
 namespace QuanLyThuChi.GUI
 {
     public sealed partial class ucGhiChep_ChiTien : UserControl
     {
-        private BLL_HANG_MUC_CHI BLL_GhiChep;
+        private BLL_HANG_MUC_CHI BLL_hangmucchi;
         private BLL_TAI_KHOAN BLL_TaiKhoan;
         public ucGhiChep_ChiTien()
         {
             this.InitializeComponent();
             txbTien.GotFocus += TxbTien_GotFocus;
             txbTien.LostFocus += TxbTien_LostFocus;
-            BLL_GhiChep = new BLL_HANG_MUC_CHI();
+            BLL_hangmucchi = new BLL_HANG_MUC_CHI();
             BLL_TaiKhoan = new BLL_TAI_KHOAN();
-            cmbMucChi.ItemsSource = BLL_GhiChep.GetHangMucChi();
+            cmbMucChi.ItemsSource = BLL_hangmucchi.GetHangMucChi();
             cmbMucChi.DisplayMemberPath = "TenHangMucChi";
             cmbMucChi.SelectedIndex = 0;
             cmbTuTaiKhoan.ItemsSource = BLL_TaiKhoan.getTaiKhoanByEmail();
@@ -57,6 +60,39 @@ namespace QuanLyThuChi.GUI
         {
             if (ucCalculator.result != null)
                 this.txbTien.Text = ucCalculator.result;
+        }
+
+        private void btnLuuGhiChep_Click(object sender, RoutedEventArgs e)
+        {
+            var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            // get setting
+            Object email = localSettings.Values["Email"];
+
+            BLL_GHI_CHEP bll = new BLL_GHI_CHEP();
+            GHI_CHEP gc = new GHI_CHEP(txbNgayChi.Date.Day, txbNgayChi.Date.Month,
+                txbNgayChi.Date.Year,
+                txbGioChi.Time.ToString(),
+                "Chi",
+                "",
+                (cmbMucChi.SelectedItem as HANG_MUC_CHI).TenHangMucChi,
+                long.Parse(txbTien.Text),
+                "VND",
+                "",
+                txbSuKien.Text,
+                (cmbTuTaiKhoan.SelectedItem as TAIKHOAN).tenTaiKhoan,
+                "",
+                email.ToString());
+
+            if(bll.addGhiChep(gc) == 1)
+            {
+                var dialog = new MessageDialog("Thêm thành công");
+                dialog.ShowAsync();
+            }
+            else
+            {
+                var dialog = new MessageDialog("Thêm thất bại");
+                dialog.ShowAsync();
+            }
         }
     }
 }
