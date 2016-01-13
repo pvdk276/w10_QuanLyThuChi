@@ -30,6 +30,7 @@
         <Grid Grid.Row="1" Background="#00A59F">
             <Button Name="btnLuuGhiChep" Content="Lưu ghi chép"  HorizontalAlignment="Right" Margin="0 0 10 0"/>
         </Grid>
+        <Grid Name="gridCal1" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Visibility="Collapsed" LostFocus="gridCal1_LostFocus"/>
     </Grid>
     
 </UserControl>

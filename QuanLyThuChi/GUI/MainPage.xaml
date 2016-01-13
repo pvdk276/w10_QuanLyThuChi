@@ -57,17 +57,17 @@
                 <Grid Background="{ThemeResource SystemControlForegroundAccentBrush}">
                     <Button x:Name="HamburgerButton1" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" VerticalAlignment="Top"
                      Width="48" Height="50" Background="Transparent" Foreground="White" Click="HamburgerButton_Click" FontSize="26.667"/>
-                    <StackPanel x:Name="tapVi" Orientation="Horizontal" Tapped="StackPanel_Tapped" VerticalAlignment="Top" Margin="0,50,0,0">
-                        <Button x:Name="btnVi" FontFamily="Segoe MDL2 Assets" Content="&#xE10F;"
+                    <StackPanel x:Name="stkHome" Orientation="Horizontal" Tapped="stkHome_Tapped" VerticalAlignment="Top" Margin="0,50,0,0">
+                        <Button x:Name="btnHome" FontFamily="Segoe MDL2 Assets" Content="&#xE10F;"
                      Width="48" Height="50" Background="Transparent" Foreground="White"/>
-                        <TextBlock Text="Tài khoản ví" FontSize="18" VerticalAlignment="Center" Foreground="White"/>
+                        <TextBlock Text="Home" FontSize="18" VerticalAlignment="Center" Foreground="White"/>
                     </StackPanel>
-                    <StackPanel x:Name="tapStk" Orientation="Horizontal" VerticalAlignment="Top" Margin="0,100,0,0">
-                        <Button x:Name="btnStk" FontFamily="Segoe MDL2 Assets" Content="&#xE1D3;"
+                    <StackPanel x:Name="stkVayNo" Orientation="Horizontal" VerticalAlignment="Top" Margin="0,100,0,0" Tapped="stkVayNo_Tapped" >
+                        <Button x:Name="btnVayNo" FontFamily="Segoe MDL2 Assets" Content="&#xE1D3;"
                          Width="48" Height="50" Background="Transparent" Foreground="White"/>
-                        <TextBlock Text="Sổ tiết kiệm" FontSize="18" VerticalAlignment="Center" Foreground="White"/>
+                        <TextBlock Text="Tình hình vay nợ" FontSize="18" VerticalAlignment="Center" Foreground="White"/>
                     </StackPanel>
-                    <ListBox x:Name="lstAccount" ItemsSource="{Binding}" Margin="0,255,0,55" SelectionChanged="lstAccount_SelectionChanged" Background="Transparent">
+                    <ListBox x:Name="lstAccount" ItemsSource="{Binding}" Margin="0,216,0,55" SelectionChanged="lstAccount_SelectionChanged" Background="Transparent" Visibility="Collapsed">
                         <ListBox.ItemsPanel>
                             <ItemsPanelTemplate>
                                 <VirtualizingStackPanel VirtualizingStackPanel.VirtualizationMode="Recycling"/>
@@ -75,16 +75,23 @@
                         </ListBox.ItemsPanel>
                         <ListBox.ItemTemplate>
                             <DataTemplate>
-                                <StackPanel Orientation="Horizontal">
-                                    <Button FontFamily="Segoe MDL2 Assets" Content="&#xE1D3;" Width="48" Height="50" Background="Transparent" Foreground="White"/>
-                                    <TextBlock Text="{Binding tenTaiKhoan}" FontSize="18" VerticalAlignment="Center" Foreground="White"/>
+                                <StackPanel Orientation="Vertical">
+                                    <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="0,0,0,0"> 
+                                        <Button FontFamily="Segoe MDL2 Assets" Content="&#xE1D3;" Width="48" Height="50" HorizontalAlignment="Left" Background="Transparent" Foreground="White"/>
+                                        <TextBlock Text="{Binding tenTaiKhoan}" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White"/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="Số tiền còn:" FontSize="15" VerticalAlignment="Center" Foreground="White"/>
+                                        <TextBlock Text="{Binding SoTienTaiKhoanConverted}" Padding="5,0,0,0" FontSize="15" VerticalAlignment="Center" Foreground="White"/>
+                                        <TextBlock Text="{Binding MaLoaiTien}" Padding="5,0,0,0" FontSize="15" VerticalAlignment="Center" Foreground="White"/>
+                                    </StackPanel>
                                 </StackPanel>
                             </DataTemplate>
                         </ListBox.ItemTemplate>
                     </ListBox>
-                    <Border x:Name="hambagerBorder" Height="1" BorderThickness="1" Margin="0,194,0,0" VerticalAlignment="Top" BorderBrush="White" HorizontalAlignment="Left" Width="350"/>
+                    <Border x:Name="hambagerBorder" Height="1" BorderThickness="1" Margin="0,160,0,0" VerticalAlignment="Top" BorderBrush="White" HorizontalAlignment="Left" Width="350"/>
                     <!--Thêm tài khoản-->
-                    <StackPanel x:Name="stackThemTaiKhoan" Orientation="Horizontal" VerticalAlignment="Top" Margin="0,200,0,0" Tapped="paAddFinanceAccount_Tapped">
+                    <StackPanel x:Name="stackThemTaiKhoan" Orientation="Horizontal" VerticalAlignment="Top" Margin="0,161,0,0" Tapped="paAddFinanceAccount_Tapped">
                         <Button x:Name="btnThemTaiKhoan" FontFamily="Segoe MDL2 Assets" Content="&#xE710;"
                          Width="48" Height="50" Background="Transparent" Foreground="White"/>
                         <TextBlock Text="Thêm tài khoản" FontSize="18" VerticalAlignment="Center" Foreground="White"/>

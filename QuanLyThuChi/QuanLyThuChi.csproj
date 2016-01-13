@@ -114,19 +114,19 @@
     <Compile Include="GUI\FinanceAccount\AddFinanceAccount.xaml.cs">
       <DependentUpon>AddFinanceAccount.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GUI\GhiChep.xaml.cs">
+    <Compile Include="GUI\GhiChep\GhiChep.xaml.cs">
       <DependentUpon>GhiChep.xaml</DependentUpon>
     </Compile>
     <Compile Include="GUI\ThietLap.xaml.cs">
       <DependentUpon>ThietLap.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GUI\ucGhiChep_ChiTien.xaml.cs">
+    <Compile Include="GUI\GhiChep\ucGhiChep_ChiTien.xaml.cs">
       <DependentUpon>ucGhiChep_ChiTien.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GUI\ucGhiChep_ChuyenKhoan.xaml.cs">
+    <Compile Include="GUI\GhiChep\ucGhiChep_ChuyenKhoan.xaml.cs">
       <DependentUpon>ucGhiChep_ChuyenKhoan.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GUI\ucGhiChep_ThuTien.xaml.cs">
+    <Compile Include="GUI\GhiChep\ucGhiChep_ThuTien.xaml.cs">
       <DependentUpon>ucGhiChep_ThuTien.xaml</DependentUpon>
     </Compile>
     <Compile Include="GUI\ucThietLap.xaml.cs">
@@ -205,7 +205,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="GUI\GhiChep.xaml">
+    <Page Include="GUI\GhiChep\GhiChep.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -217,15 +217,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="GUI\ucGhiChep_ChiTien.xaml">
+    <Page Include="GUI\GhiChep\ucGhiChep_ChiTien.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="GUI\ucGhiChep_ChuyenKhoan.xaml">
+    <Page Include="GUI\GhiChep\ucGhiChep_ChuyenKhoan.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="GUI\ucGhiChep_ThuTien.xaml">
+    <Page Include="GUI\GhiChep\ucGhiChep_ThuTien.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -268,6 +268,7 @@
       <HintPath>..\..\..\..\Desktop\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\AppX\SQLite.Net.Platform.WinRT.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

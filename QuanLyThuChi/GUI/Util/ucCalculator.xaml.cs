@@ -36,8 +36,17 @@ namespace QuanLyThuChi.GUI.Util
             Grid grid = (this.Parent as Grid);
             grid.Children.Clear();
             grid.Visibility = Visibility.Collapsed;
-            //Grid pageGrid = (grid.Parent as Grid);
-            //pageGrid.FindName("gridCal").Visibility = Visibility.Collapsed;
+            if (!(isX || isDiv || isPlus || isMinus) && number1 != "")
+            {
+                result = number1;
+            }
+            this.txtResult.Text = "0";
+            this.number1 = "";
+            this.number2 = "";
+            isX = false;
+            isDiv = false;
+            isMinus = false;
+            isPlus = false;
         }
 
         private void btnC_Click(object sender, RoutedEventArgs e)

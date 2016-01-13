@@ -22,7 +22,15 @@ namespace QuanLyThuChi.BLL
             var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
             // get setting
             Object email = localSettings.Values["Email"];
-            return Dal_Tai_Khoan.GetTaiKhoanByEmail(email.ToString());
+
+            List<TAIKHOAN> lst = Dal_Tai_Khoan.GetTaiKhoanByEmail(email.ToString());
+            List<TAIKHOAN> result = new List<TAIKHOAN>();
+            foreach (TAIKHOAN item in lst)
+            {
+                result.Add(new TAIKHOAN(item.tenTaiKhoan, item.idLoaiTaiKhoan, item.MaLoaiTien, item.GhiChu,
+                    item.SoTienTaiKhoan, item.Email));
+            }
+            return result;
         }
         public List<LOAITAIKHOAN> getLoaiTaiKhoan()
         {

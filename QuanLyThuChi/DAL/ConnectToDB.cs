@@ -20,6 +20,7 @@ namespace QuanLyThuChi.DAL
 
             //create database local file name "HD_db.sqlite.sqlite"
             path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "HD_db.sqlite");
+            //File.Delete(path); //Xoa database dua theo duong dan path
             if (!File.Exists(path))
             {
                 conn = new SQLite.Net.SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
@@ -87,11 +88,11 @@ namespace QuanLyThuChi.DAL
 
                     var listLoaiTaiKhoan = new List<Model_LOAI_TAI_KHOAN>()
                     {
-                        new Model_LOAI_TAI_KHOAN() {IdLoaiTaiKhoan = 1, TenLoaiTaiKhoan = "Tiền mặt"},
-                        new Model_LOAI_TAI_KHOAN() {IdLoaiTaiKhoan = 2, TenLoaiTaiKhoan = "Tài khoản ngân hàng"},
+                        new Model_LOAI_TAI_KHOAN() {IdLoaiTaiKhoan = 0, TenLoaiTaiKhoan = "Tiền mặt"},
+                        new Model_LOAI_TAI_KHOAN() {IdLoaiTaiKhoan = 1, TenLoaiTaiKhoan = "Tài khoản ngân hàng"},
                         new Model_LOAI_TAI_KHOAN() {IdLoaiTaiKhoan = 2, TenLoaiTaiKhoan = "Thẻ tín dụng"},
-                        new Model_LOAI_TAI_KHOAN() {IdLoaiTaiKhoan = 2, TenLoaiTaiKhoan = "Tài khoản đầu tư"},
-                        new Model_LOAI_TAI_KHOAN() {IdLoaiTaiKhoan = 2, TenLoaiTaiKhoan = "Khác"},
+                        new Model_LOAI_TAI_KHOAN() {IdLoaiTaiKhoan = 3, TenLoaiTaiKhoan = "Tài khoản đầu tư"},
+                        new Model_LOAI_TAI_KHOAN() {IdLoaiTaiKhoan = 4, TenLoaiTaiKhoan = "Khác"},
                     };
                     foreach (var item in listLoaiTaiKhoan)
                     {

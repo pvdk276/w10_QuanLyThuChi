@@ -8,6 +8,7 @@
     <RootPropertyPathName Name="MaLoaiTien" />
     <RootPropertyPathName Name="TenLoaiTaiKhoan" />
     <RootPropertyPathName Name="ActualWidth" />
+    <RootPropertyPathName Name="SoTienTaiKhoanConverted" />
     <RootPropertyPathName Name="tenTaiKhoan" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -101,6 +102,7 @@
       <RootProperty Name="FontStretch" />
       <RootProperty Name="TextAlignment" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Padding" />
       <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
@@ -129,6 +131,7 @@
       <RootProperty Name="ItemsPanel" />
       <RootProperty Name="ItemTemplate" />
       <RootProperty Name="Background" />
+      <RootProperty Name="Visibility" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">

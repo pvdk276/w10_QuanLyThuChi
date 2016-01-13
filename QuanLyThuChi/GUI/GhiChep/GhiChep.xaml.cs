@@ -40,6 +40,31 @@ namespace QuanLyThuChi.GUI
             
             
         }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            cmbLoaiGhiChep.SelectedIndex = int.Parse(e.Parameter.ToString());
+            base.OnNavigatedTo(e);
+            var currentView = SystemNavigationManager.GetForCurrentView();
+            //Show back button on title
+            currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+            //Back button press
+            currentView.BackRequested += backButton_Tapped;
+        }
+
+        /// <summary>
+        /// Handles the Tapped event of the backButton control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="BackRequestedEventArgs"/> instance containing the event data.</param>
+        private void backButton_Tapped(object sender, BackRequestedEventArgs e)
+        {
+            Frame frame = Window.Current.Content as Frame;
+            var currentView = SystemNavigationManager.GetForCurrentView();
+            //hide back button on title
+            currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
+            frame.Navigate(typeof(MainPage));
+        }
+
         private void App_BackRequested(object sender, BackRequestedEventArgs e)
         {
             Frame rootFrame = Window.Current.Content as Frame;
@@ -53,11 +78,6 @@ namespace QuanLyThuChi.GUI
                 e.Handled = true;
                 rootFrame.GoBack();
             }
-        }
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            cmbLoaiGhiChep.SelectedIndex = int.Parse(e.Parameter.ToString());
-            base.OnNavigatedTo(e);
         }
 
         private void cmbLoaiGhiChep_DataContextChanged(FrameworkElement sender, DataContextChangedEventArgs args)

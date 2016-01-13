@@ -22,26 +22,30 @@ namespace QuanLyThuChi.Objects
 
         public long SoTienTaiKhoan { get; set; }
 
+        public string SoTienTaiKhoanConverted { get; set; }
+
         public string Email { get; set; }
 
-        public TAIKHOAN(int idTaiKhoan, string tenTaiKhoan, int idLoaiTaiKhoan, string tenLoaiTaiKhoan, string maLoaiTien, string ghiChu, long soTienTaiKhoan, string email)
+        public TAIKHOAN(int idTaiKhoan, string _tenTaiKhoan, int _idLoaiTaiKhoan, string tenLoaiTaiKhoan, string maLoaiTien, string ghiChu, long soTienTaiKhoan, string email)
         {
             this.idTaiKhoan = idTaiKhoan;
-            tenTaiKhoan = tenTaiKhoan;
-            idLoaiTaiKhoan = idLoaiTaiKhoan;
+            tenTaiKhoan = _tenTaiKhoan;
+            idLoaiTaiKhoan = _idLoaiTaiKhoan;
             TenLoaiTaiKhoan = tenLoaiTaiKhoan;
             MaLoaiTien = maLoaiTien;
             GhiChu = ghiChu;
             SoTienTaiKhoan = soTienTaiKhoan;
+            SoTienTaiKhoanConverted = string.Format("{0:#,###0.#}", SoTienTaiKhoan);
             Email = email;
         }
-        public TAIKHOAN(string tenTaiKhoan, int idLoaiTaiKhoan, string maLoaiTien, string ghiChu, long soTienTaiKhoan, string email)
+        public TAIKHOAN(string _tenTaiKhoan, int _idLoaiTaiKhoan, string maLoaiTien, string ghiChu, long soTienTaiKhoan, string email)
         {
-            tenTaiKhoan = tenTaiKhoan;
-            idLoaiTaiKhoan = idLoaiTaiKhoan;
+            tenTaiKhoan = _tenTaiKhoan;
+            idLoaiTaiKhoan = _idLoaiTaiKhoan;
             MaLoaiTien = maLoaiTien;
             GhiChu = ghiChu;
             SoTienTaiKhoan = soTienTaiKhoan;
+            SoTienTaiKhoanConverted = string.Format("{0:#,###0.#}", SoTienTaiKhoan);
             Email = email;
         }
         public TAIKHOAN()

@@ -13,6 +13,7 @@ namespace QuanLyThuChi.BLL
     public class BLL_USERS
     {
         DAL_USERS dal = new DAL_USERS();
+        DAL_TAI_KHOAN dalTk = new DAL_TAI_KHOAN();
         /// <summary>
         /// Inserts the user.
         /// </summary>
@@ -24,12 +25,19 @@ namespace QuanLyThuChi.BLL
             EncryptPassword encryptPass = new EncryptPassword();
             string newPass = encryptPass.encrypt(user.password);
             //insert
-            return dal.insertUser(user.email, 
+            if(dal.insertUser(user.email, 
                 user.firstName, 
                 user.lastName, 
                 newPass, 
                 user.type, 
-                user.status);
+                user.status) == 1)
+            {
+                dalTk.insertAccount("Ví", 0, "VND", "", 0, user.email);
+                dalTk.insertAccount("Heo đất", 4, "VND", "", 0, user.email);
+            }
+            else { return 0; }
+
+            return 1;
         }
 
         /// <summary>

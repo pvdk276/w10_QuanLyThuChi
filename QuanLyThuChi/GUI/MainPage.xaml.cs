@@ -27,11 +27,12 @@ namespace QuanLyThuChi
         private void HamburgerButton_Click(object sender, RoutedEventArgs e)
         {
             MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
-        }
-
-        private void StackPanel_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-
+            if(MySplitView.IsPaneOpen)
+            {
+                this.lstAccount.Visibility = Visibility.Visible;
+            }
+            else
+                this.lstAccount.Visibility = Visibility.Collapsed;
         }
 
         private void btnSync_Click(object sender, RoutedEventArgs e)
@@ -96,6 +97,16 @@ namespace QuanLyThuChi
         {
             BLL_TAI_KHOAN blltaikhoan = new BLL_TAI_KHOAN();
             lstAccount.DataContext = blltaikhoan.getTaiKhoanByEmail();
+        }
+
+        private void stkHome_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainPage));
+        }
+
+        private void stkVayNo_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+
         }
 
         //private void btnGhiChep_GhiTheoTienCon_Tapped(object sender, TappedRoutedEventArgs e)

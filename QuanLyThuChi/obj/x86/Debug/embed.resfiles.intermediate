@@ -2,13 +2,13 @@ App.xbf
 GUI\Admin\AdminPage.xbf
 GUI\Admin\CreateAccount.xbf
 GUI\FinanceAccount\AddFinanceAccount.xbf
-GUI\GhiChep.xbf
+GUI\GhiChep\GhiChep.xbf
+GUI\GhiChep\ucGhiChep_ChiTien.xbf
+GUI\GhiChep\ucGhiChep_ChuyenKhoan.xbf
+GUI\GhiChep\ucGhiChep_ThuTien.xbf
 GUI\Login.xbf
 GUI\MainPage.xbf
 GUI\ThietLap.xbf
-GUI\ucGhiChep_ChiTien.xbf
-GUI\ucGhiChep_ChuyenKhoan.xbf
-GUI\ucGhiChep_ThuTien.xbf
 GUI\ucThietLap.xbf
 GUI\Util\ucCalculator.xbf
 GUI\Welcome.xbf
