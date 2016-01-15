@@ -5,6 +5,11 @@
     <RootPropertyPathName Name="type" />
     <RootPropertyPathName Name="firstName" />
     <RootPropertyPathName Name="email" />
+    <RootPropertyPathName Name="ChuyenKhoan" />
+    <RootPropertyPathName Name="Chi" />
+    <RootPropertyPathName Name="Thu" />
+    <RootPropertyPathName Name="Ngay" />
+    <RootPropertyPathName Name="ItemsSource" />
     <RootPropertyPathName Name="MaLoaiTien" />
     <RootPropertyPathName Name="TenLoaiTaiKhoan" />
     <RootPropertyPathName Name="ActualWidth" />
@@ -18,7 +23,6 @@
     <RootPropertyPathName Name="ThuChiChuyenKhoan" />
     <RootPropertyPathName Name="Nam" />
     <RootPropertyPathName Name="Thang" />
-    <RootPropertyPathName Name="Ngay" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -196,6 +200,52 @@
       <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="QuanLyThuChi.GUI.CreateAccount" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
+      <RootProperty Name="Title" />
+      <RootProperty Name="Items" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.PivotItem">
+      <RootProperty Name="Header" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Charts.PieChart">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ToolTipEnabled" />
+      <RootProperty Name="Series" />
+      <RootProperty Name="Legend" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="VerticalScrollMode" />
+      <RootProperty Name="IsHoldingEnabled" />
+      <RootProperty Name="VerticalScrollBarVisibility" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Charts.Series">
+      <RootProperty Name="View" />
+      <RootProperty Name="Data" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Charts.PieSeriesView">
+      <RootProperty Name="LegendPointPattern" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Charts.DataSourceAdapter">
+      <RootProperty Name="DataSource" />
+      <RootProperty Name="DataMembers" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Charts.DataMember">
+      <RootProperty Name="DataMemberType" />
+      <RootProperty Name="ColumnName" />
+      <RootProperty Name="ScaleType" />
+    </RootType>
+    <RootType FullName="DevExpress.UI.Xaml.Charts.Legend">
+      <RootProperty Name="MaximumRowsOrColumns" />
+    </RootType>
+    <RootType FullName="QuanLyThuChi.GUI.BaoCao.BaoCao" />
+    <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="QuanLyThuChi.GUI.BaoCao.ucBaoCaoVayNo" />
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
@@ -226,15 +276,6 @@
     </RootType>
     <RootType FullName="QuanLyThuChi.GUI.Login" />
     <RootType FullName="QuanLyThuChi.GUI.ThietLap" />
-    <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
-      <RootProperty Name="Content" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
-      <RootProperty Name="VerticalScrollMode" />
-      <RootProperty Name="IsHoldingEnabled" />
-      <RootProperty Name="VerticalScrollBarVisibility" />
-      <RootProperty Name="Content" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
       <RootProperty Name="Name" />
       <RootProperty Name="Header" />

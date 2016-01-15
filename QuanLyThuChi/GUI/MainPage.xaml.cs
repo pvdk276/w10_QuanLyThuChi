@@ -2,6 +2,7 @@
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
 using QuanLyThuChi.GUI;
+using QuanLyThuChi.GUI.BaoCao;
 using QuanLyThuChi.GUI.FinanceAccount;
 using System;
 using Windows.UI.Xaml.Navigation;
@@ -108,14 +109,14 @@ namespace QuanLyThuChi
             Frame.Navigate(typeof(MainPage));
         }
 
-        private void stkVayNo_Tapped(object sender, TappedRoutedEventArgs e)
+        private void lstbGhiChep_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
 
-        private void lstbGhiChep_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void stkBaoCao_Tapped(object sender, TappedRoutedEventArgs e)
         {
-
+            Frame.Navigate(typeof(BaoCao));
         }
 
         //private void btnGhiChep_GhiTheoTienCon_Tapped(object sender, TappedRoutedEventArgs e)

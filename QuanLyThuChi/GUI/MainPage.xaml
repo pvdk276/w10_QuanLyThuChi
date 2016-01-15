@@ -62,10 +62,10 @@
                      Width="48" Height="50" Background="Transparent" Foreground="White"/>
                         <TextBlock Text="Home" FontSize="18" VerticalAlignment="Center" Foreground="White"/>
                     </StackPanel>
-                    <StackPanel x:Name="stkVayNo" Orientation="Horizontal" VerticalAlignment="Top" Margin="0,100,0,0" Tapped="stkVayNo_Tapped" >
-                        <Button x:Name="btnVayNo" FontFamily="Segoe MDL2 Assets" Content="&#xE1D3;"
+                    <StackPanel x:Name="stkBaoCao" Orientation="Horizontal" VerticalAlignment="Top" Margin="0,100,0,0" Tapped="stkBaoCao_Tapped" >
+                        <Button x:Name="btnBaoCao" FontFamily="Segoe MDL2 Assets" Content="&#xE1D3;"
                          Width="48" Height="50" Background="Transparent" Foreground="White"/>
-                        <TextBlock Text="Tình hình vay nợ" FontSize="18" VerticalAlignment="Center" Foreground="White"/>
+                        <TextBlock Text="Báo cáo" FontSize="18" VerticalAlignment="Center" Foreground="White"/>
                     </StackPanel>
                     <ListBox x:Name="lstAccount" ItemsSource="{Binding}" Margin="0,216,0,55" SelectionChanged="lstAccount_SelectionChanged" Background="Transparent" Visibility="Collapsed">
                         <ListBox.ItemsPanel>

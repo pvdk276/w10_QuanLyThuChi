@@ -113,6 +113,12 @@
     <Compile Include="GUI\Admin\AdminPage.xaml.cs">
       <DependentUpon>AdminPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GUI\BaoCao\BaoCao.xaml.cs">
+      <DependentUpon>BaoCao.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\BaoCao\ucBaoCaoVayNo.xaml.cs">
+      <DependentUpon>ucBaoCaoVayNo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FinanceAccount\AddFinanceAccount.xaml.cs">
       <DependentUpon>AddFinanceAccount.xaml</DependentUpon>
     </Compile>
@@ -137,6 +143,7 @@
     <Compile Include="GUI\Util\ucCalculator.xaml.cs">
       <DependentUpon>ucCalculator.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Objects\ViewModel.cs" />
     <Compile Include="Objects\GHI_CHEP.cs" />
     <Compile Include="Objects\HANG_MUC_CHI.cs" />
     <Compile Include="Objects\LOAITAIKHOAN.cs" />
@@ -205,6 +212,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="GUI\BaoCao\BaoCao.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\BaoCao\ucBaoCaoVayNo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GUI\FinanceAccount\AddFinanceAccount.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -251,6 +266,15 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <SDKReference Include="DevExpress.Controls, Version=15.2">
+      <Name>DevExpress.Controls</Name>
+    </SDKReference>
+    <SDKReference Include="DevExpress.Core, version=15.2">
+      <Name>DevExpress.Core</Name>
+    </SDKReference>
+    <SDKReference Include="DevExpress.Visualization, Version=15.2">
+      <Name>DevExpress.Visualization</Name>
+    </SDKReference>
     <SDKReference Include="SQLite.UAP.2015, Version=3.9.2">
       <Name>SQLite for Universal App Platform</Name>
     </SDKReference>

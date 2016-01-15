@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>b5c7bb61-a5ff-43b2-a05e-33440f216f47</PackageIdentityName>
     <IntermediateOutputPath>D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>8F5046BC7101BBD9294771102E2E3F5CFA620FD817A6E13C1C0B0CBC769D8BD9</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>0C5C27880E5EEE8C9D608B891FD3F160B0F9D186A5B2DDD776D74ED8D7D41332</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>b5c7bb61-a5ff-43b2-a05e-33440f216f47_1.0.0.0_x86__qemh25yxwsnxj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>b5c7bb61-a5ff-43b2-a05e-33440f216f47_qemh25yxwsnxj!App</RegisteredUserModeAppID>
     <RegisteredPackageID>b5c7bb61-a5ff-43b2-a05e-33440f216f47</RegisteredPackageID>
@@ -22,13 +22,61 @@
     <AppXManifest Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-01-13T03:03:55.896</Modified>
+      <Modified>2016-01-15T00:17:26.372</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\QuanLyThuChi.exe">
       <PackagePath>entrypoint\QuanLyThuChi.exe</PackagePath>
-      <Modified>2016-01-13T03:03:55.049</Modified>
+      <Modified>2016-01-15T00:17:24.780</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 15.2\Components\System\UAP\SDK\15.2.4\DevExpress.Core\15.2\References\CommonConfiguration\neutral\DevExpress.Core.v15.2.dll">
+      <PackagePath>DevExpress.Core.v15.2.dll</PackagePath>
+      <Modified>2016-01-08T09:03:19.252</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 15.2\Components\System\UAP\SDK\15.2.4\DevExpress.Core\15.2\References\CommonConfiguration\neutral\DevExpress.Drawing.v15.2.dll">
+      <PackagePath>DevExpress.Drawing.v15.2.dll</PackagePath>
+      <Modified>2016-01-08T09:03:19.285</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 15.2\Components\System\UAP\SDK\15.2.4\DevExpress.Core\15.2\References\CommonConfiguration\neutral\DevExpress.Mvvm.v15.2.dll">
+      <PackagePath>DevExpress.Mvvm.v15.2.dll</PackagePath>
+      <Modified>2016-01-08T09:03:19.310</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 15.2\Components\System\UAP\SDK\15.2.4\DevExpress.Controls\15.2\References\CommonConfiguration\neutral\DevExpress.Pdf.Core.v15.2.dll">
+      <PackagePath>DevExpress.Pdf.Core.v15.2.dll</PackagePath>
+      <Modified>2016-01-08T09:03:18.497</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 15.2\Components\System\UAP\SDK\15.2.4\DevExpress.Visualization\15.2\References\CommonConfiguration\neutral\DevExpress.UI.Xaml.Charts.v15.2.dll">
+      <PackagePath>DevExpress.UI.Xaml.Charts.v15.2.dll</PackagePath>
+      <Modified>2016-01-08T09:03:19.586</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 15.2\Components\System\UAP\SDK\15.2.4\DevExpress.Controls\15.2\References\CommonConfiguration\neutral\DevExpress.UI.Xaml.Controls.v15.2.dll">
+      <PackagePath>DevExpress.UI.Xaml.Controls.v15.2.dll</PackagePath>
+      <Modified>2016-01-08T09:03:18.554</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 15.2\Components\System\UAP\SDK\15.2.4\DevExpress.Controls\15.2\References\CommonConfiguration\neutral\DevExpress.UI.Xaml.Editors.v15.2.dll">
+      <PackagePath>DevExpress.UI.Xaml.Editors.v15.2.dll</PackagePath>
+      <Modified>2016-01-08T09:03:18.655</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 15.2\Components\System\UAP\SDK\15.2.4\DevExpress.Visualization\15.2\References\CommonConfiguration\neutral\DevExpress.UI.Xaml.Gauges.v15.2.dll">
+      <PackagePath>DevExpress.UI.Xaml.Gauges.v15.2.dll</PackagePath>
+      <Modified>2016-01-08T09:03:19.625</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 15.2\Components\System\UAP\SDK\15.2.4\DevExpress.Controls\15.2\References\CommonConfiguration\neutral\DevExpress.UI.Xaml.Layout.v15.2.dll">
+      <PackagePath>DevExpress.UI.Xaml.Layout.v15.2.dll</PackagePath>
+      <Modified>2016-01-08T09:03:18.703</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 15.2\Components\System\UAP\SDK\15.2.4\DevExpress.Visualization\15.2\References\CommonConfiguration\neutral\DevExpress.UI.Xaml.Map.v15.2.dll">
+      <PackagePath>DevExpress.UI.Xaml.Map.v15.2.dll</PackagePath>
+      <Modified>2016-01-08T09:03:19.676</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 15.2\Components\System\UAP\SDK\15.2.4\DevExpress.Controls\15.2\References\CommonConfiguration\neutral\DevExpress.UI.Xaml.Ribbon.v15.2.dll">
+      <PackagePath>DevExpress.UI.Xaml.Ribbon.v15.2.dll</PackagePath>
+      <Modified>2016-01-08T09:03:18.740</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 15.2\Components\System\UAP\SDK\15.2.4\DevExpress.Core\15.2\References\CommonConfiguration\neutral\DevExpress.UI.Xaml.v15.2.dll">
+      <PackagePath>DevExpress.UI.Xaml.v15.2.dll</PackagePath>
+      <Modified>2016-01-08T09:03:19.339</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\khoap\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -530,7 +578,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\QuanLyThuChi.xr.xml">
       <PackagePath>QuanLyThuChi.xr.xml</PackagePath>
-      <Modified>2016-01-13T01:53:22.399</Modified>
+      <Modified>2016-01-15T00:16:43.712</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -538,11 +586,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-01-13T03:03:55.660</Modified>
+      <Modified>2016-01-15T00:17:26.132</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\My Project\.Project\w10_QuanLyThuChi\QuanLyThuChi\bin\x86\Debug\Core\QuanLyThuChi.exe">
       <PackagePath>QuanLyThuChi.exe</PackagePath>
-      <Modified>2016-01-13T03:03:55.894</Modified>
+      <Modified>2016-01-15T00:17:26.366</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

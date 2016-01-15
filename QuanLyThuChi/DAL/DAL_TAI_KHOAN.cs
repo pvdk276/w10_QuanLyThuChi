@@ -73,13 +73,6 @@ namespace QuanLyThuChi.DAL
             //edit data to Model_TAI_KHOAN
             var query = conn.Query<Model_TAI_KHOAN>("Update Model_TAI_KHOAN set SoTienTaiKhoan = " + _SoTienTaiKhoan + " where tenTaiKhoan= '" +
                 _tenTaiKhoan + "' and Email='" + _Email + "'");
-            //var account = conn.Table<Model_TAI_KHOAN>().Where(x => x.tenTaiKhoan == _tenTaiKhoan && x.Email == _Email).FirstOrDefault();
-            //if (account != null)
-            //{
-            //    account.SoTienTaiKhoan = _SoTienTaiKhoan;
-            //    conn.Update(account);
-            //    return 1;
-            //}
             return 1;
         }
     }

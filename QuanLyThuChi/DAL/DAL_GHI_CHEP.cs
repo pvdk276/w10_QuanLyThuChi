@@ -67,5 +67,33 @@ namespace QuanLyThuChi.DAL
             return query;
         }
 
+        public List<GHI_CHEP> getGhiChepByDate(int day, int month, int year, string email)
+        {
+            var query =
+                conn.Query<GHI_CHEP>(
+                    "select * from Model_GHI_CHEP where email='" + email + "' and Ngay = " + day 
+                    + " and Thang=" + month + " and Nam= " + year + "")
+                    .ToList();
+            return query;
+        }
+
+        public List<GHI_CHEP> getGhiChepByMonth(int month, int year, string email)
+        {
+            var query =
+                conn.Query<GHI_CHEP>(
+                    "select * from Model_GHI_CHEP where email='" + email + "' and Thang=" + month + " and Nam= " + year + "")
+                    .ToList();
+            return query;
+        }
+
+        public List<GHI_CHEP> getGhiChepByYear(int year, string email)
+        {
+            var query =
+                conn.Query<GHI_CHEP>(
+                    "select * from Model_GHI_CHEP where email='" + email + "' and Nam= " + year + "")
+                    .ToList();
+            return query;
+        }
+
     }
 }

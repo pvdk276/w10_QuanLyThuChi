@@ -63,5 +63,26 @@ namespace QuanLyThuChi.BLL
             }
             return result;
         }
+
+        public List<GHI_CHEP> getGhiChepByDate(int day, int month, int year)
+        {
+            var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            // get setting
+            Object email = localSettings.Values["Email"];
+
+            List<GHI_CHEP> lst = dal.getGhiChepByDate(day,month,year,email.ToString());
+            List<GHI_CHEP> result = new List<GHI_CHEP>();
+            if(lst.Count == 0)
+            {
+                return null;
+            }
+            foreach (GHI_CHEP item in lst)
+            {
+                result.Add(new GHI_CHEP(item.Ngay, item.Thang, item.Nam, item.Gio,
+                    item.ThuChiChuyenKhoan, item.MucThu, item.MucChi, item.SoTien, item.MaLoaiTien, item.GhiChuGhiChep, item.SuKien,
+                    item.TuTaiKhoan, item.DenTaiKhoan, item.Email));
+            }
+            return result;
+        }
     }  
 }

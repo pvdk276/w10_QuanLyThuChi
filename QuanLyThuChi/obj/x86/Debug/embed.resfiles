@@ -1,6 +1,8 @@
 App.xbf
 GUI\Admin\AdminPage.xbf
 GUI\Admin\CreateAccount.xbf
+GUI\BaoCao\BaoCao.xbf
+GUI\BaoCao\ucBaoCaoVayNo.xbf
 GUI\FinanceAccount\AddFinanceAccount.xbf
 GUI\GhiChep\GhiChep.xbf
 GUI\GhiChep\ucGhiChep_ChiTien.xbf
